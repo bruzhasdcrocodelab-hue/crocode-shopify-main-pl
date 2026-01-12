@@ -1,0 +1,148 @@
+.footer {
+  position: relative;
+
+  & > img {
+    object-fit: cover;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: fluid-size(50, 72) fluid-size(15, 80) fluid-size(15, 30); 
+
+    @include media-up(md) {
+      gap: fluid-size(100, 328); 
+    }
+
+    @include media-down(md) {
+      gap: 90px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 55px;
+    justify-content: space-between;
+
+    @include media-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__message {
+    max-width: fluid-size(215, 415);
+    margin-bottom: 20px;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
+    text-transform: uppercase;
+    color: var(--color-text-black);
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: fluid-size(25, 40);
+  }
+
+  &__network {
+    display: flex;
+    gap: 15px;
+    
+  }
+
+  &__network_link {
+    color: var(--color-text-black);
+  }
+
+  &__menu {
+    display: flex;
+
+    @include media-up(md) {
+      gap: fluid-size(40, 135); 
+    }
+
+    @include media-down(md) {
+      align-self: center;
+      width: max-content;
+      flex-direction: column;
+      gap: 90px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__column_title {
+    margin-bottom: 8px;
+    line-height: 120%;
+    color: var(--color-text-black);
+
+    @include media-up(md) {
+      font-size: fluid-size(18, 24);
+    }
+
+    @include media-down(md) {
+      font-size: 24px;
+    }
+  }
+
+  &__list_item {
+    padding: 8px 0;
+    line-height: 120%;
+    color: var(--color-text-black);
+
+    @include media-up(md) {
+      font-size: fluid-size(16, 20);
+    }
+
+    @include media-down(md) {
+      font-size: 20px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom_content {
+    display: flex;
+    gap: fluid-size(15, 65);
+    align-items: center;
+  }
+
+  &__logo {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--color-text-black);
+  }
+
+  &__copyright {
+    font-size: fluid-size(12, 16);
+  }
+
+  &__nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    @include media-down(md) {
+      display: none;
+    }
+  }
+
+  &__nav_item {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--color-text-black);
+  }
+}

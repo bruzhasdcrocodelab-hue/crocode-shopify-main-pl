@@ -1,0 +1,38 @@
+.aboutUs {
+  &__inner {
+    padding: fluid-size(70, 130) fluid-size(25, 110) fluid-size(145, 210); 
+  }
+
+  &__title {
+    margin-bottom: fluid-size(17, 20);
+    color: var(--color-title-primary);
+  }
+
+  &__content {
+    display: flex;
+    gap: fluid-size(30, 70);
+
+    @include media-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__message {
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: fluid-size(20, 40);
+    line-height: 145%;
+  }
+
+  &__text {
+    font-size: fluid-size(16, 20);
+    line-height: 217%;
+    text-align: justify;
+  }
+
+  &__texts{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(17, 20);
+  }
+}

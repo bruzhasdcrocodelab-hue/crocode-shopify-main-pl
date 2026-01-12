@@ -1,0 +1,67 @@
+@function proportional-size($known-side, $original-a, $original-b) {
+  @return ($known-side * $original-b) / $original-a;
+}
+
+.services {
+  background: #000;
+
+  &__inner {
+    padding: fluid-size(65, 95) fluid-size(40, 125) fluid-size(75, 240); 
+  }
+
+  &__title {
+    color: var(--color-title-white);
+    margin-bottom: fluid-size(45, 125);
+  }
+
+  &__content {
+    @include media-up(lg) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-end;
+      column-gap: fluid-size(10, 37);
+      row-gap: fluid-size(10, 23);
+    }
+
+    @include media-down(lg) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    @include media-up(lg) {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: fluid-size(calc(532 / 5.5), 532);
+        aspect-ratio: 532/415;
+      }
+
+      &:nth-child(1) {
+        grid-row: 1;
+      }
+
+      &:nth-child(2) {
+        grid-row: 1;
+      }
+
+      &:nth-child(3) {
+        grid-row: 2;
+      }
+
+      &:nth-child(4) {
+        grid-row: 1 / 3;
+        width: fluid-size(calc(532 / 5.5), 532);
+        aspect-ratio: 532/660;
+      }
+    }
+
+    @include media-down(lg) {
+      aspect-ratio: 532/415;
+      max-width: 400px;
+    }
+  }
+}

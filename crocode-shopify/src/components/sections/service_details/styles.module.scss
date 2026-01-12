@@ -1,0 +1,72 @@
+.details {
+  position: relative;
+  overflow: hidden;
+
+  &__pattern {
+    position: absolute;
+    top: fluid-size(-860, -460);
+    opacity: 1;
+    width: 80%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &__inner {
+    padding: fluid-size(80, 141) fluid-size(40, 95) fluid-size(100, 180) fluid-size(40, 125);
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(60, 74);
+    position: relative;
+    z-index: 2;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(20, 27.4);
+  }
+
+  &__title {
+    font-size: fluid-size(20, 36);
+    line-height: 137%;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: fluid-size(12, 20);
+    line-height: 137%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: fluid-size(12, 20);
+    padding-left: fluid-size(20, 30);
+  }
+
+  &__item {
+    font-size: fluid-size(12, 20);
+    list-style-type: disc;
+  }
+
+  &__h2 {
+    font-size: fluid-size(16, 28);
+    line-height: 137%;
+    text-transform: uppercase;
+    margin-top: fluid-size(16, 27.4);
+    font-weight: 400;
+  }
+
+  &__h3 {
+    font-size: fluid-size(14, 24);
+    line-height: 137%;
+    text-transform: uppercase;
+    margin-top: fluid-size(12, 20);
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,61 @@
+.talk {
+
+  &__inner {
+    display: flex;
+    padding: fluid-size(0, 300) fluid-size(25, 110) fluid-size(120, 200); 
+
+    @include media-up(lg) {
+      justify-content: center;
+      gap: fluid-size(30, 85);
+    }
+
+    @include media-down(lg) {
+      flex-direction: column;
+      align-items: center;
+      gap: fluid-size(75, 85);
+    }
+  }
+
+  &__info {
+    flex: 30%;
+    max-width: 516px;
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(20, 60);
+    color: var(--color-text-white);
+  }
+
+  &__info_content {
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-size: fluid-size(12, 20);
+    line-height: 140%;
+  }
+
+  &__cards {
+    display: flex;
+    gap: fluid-size(10, 40);
+    align-items: flex-end;
+  }
+
+  &__card {
+    @include media-up(lg) {
+      width: fluid-size(100, 532); 
+    }
+
+    @include media-down(lg) {
+      width: fluid-size(155, 532);
+    }
+    
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

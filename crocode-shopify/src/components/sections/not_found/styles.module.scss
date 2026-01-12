@@ -1,0 +1,21 @@
+.section {
+  position: relative;
+
+  &__inner {
+    padding: 145px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+  }
+
+  &__title {
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+
+  }
+}

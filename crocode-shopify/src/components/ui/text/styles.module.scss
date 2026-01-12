@@ -1,0 +1,15 @@
+.title {
+
+  &--big {
+    text-transform: uppercase;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
+  }
+
+  &--small {
+    text-transform: uppercase;
+    font-size: fluid-size(16, 36); 
+    font-weight: 700;
+    line-height: 137%;
+  }
+}

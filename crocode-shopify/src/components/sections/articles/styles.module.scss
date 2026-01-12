@@ -1,0 +1,11 @@
+.articles {
+  &__inner {
+    padding: 460px fluid-size(20, 45) fluid-size(200, 240); 
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(140, 250); 
+  }
+}

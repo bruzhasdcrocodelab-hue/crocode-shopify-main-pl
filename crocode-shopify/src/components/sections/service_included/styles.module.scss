@@ -1,0 +1,33 @@
+.included {
+  padding: fluid-size(80, 120) fluid-size(40, 125);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(40, 60);
+    max-width: 1200px;
+  }
+
+  &__title {
+    font-size: fluid-size(24, 48);
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(15, 25);
+    padding-left: fluid-size(20, 30);
+  }
+
+  &__item {
+    font-size: fluid-size(14, 18);
+    line-height: 150%;
+    list-style-type: disc;
+
+    &::marker {
+      color: var(--color-primary);
+    }
+  }
+}

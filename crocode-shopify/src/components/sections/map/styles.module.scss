@@ -1,0 +1,26 @@
+.section {
+  padding: 0 fluid-size(0, 50);
+
+  &__header {
+    margin-bottom: fluid-size(45, 85);
+  }
+
+  &__title {
+    color: var(--color-title-white);
+  }
+
+  &__address {
+    font-size: fluid-size(16, 36); 
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-text-white);
+  }
+}
+
+.map {
+  position: relative;
+  height: fluid-size(460, 620);
+  border-radius: fluid-size(20, 77);
+  overflow: hidden;
+  background: #232322;
+}

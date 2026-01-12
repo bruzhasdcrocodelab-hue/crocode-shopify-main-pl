@@ -1,0 +1,46 @@
+.button {
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  &__primary {
+    height:  60px;
+    background: var(--color-btn-primary);
+
+    &--text {
+      width: max-content;
+      min-width: 295px;
+      padding: 5px 19px;
+    }
+
+    .button__text {
+      text-transform: uppercase;
+      line-height: 120%;
+      font-size: fluid-size(16, 20);
+      border-radius: 50px;
+      color: var(--color-text-black);
+    }
+  }
+
+  &__secondary {
+    background: #FFFFFF61;
+    height: 60px;
+
+    &--text {
+      width: max-content;
+      padding: 14px 25px;
+    }
+
+    .button__text {
+      text-transform: uppercase;
+      line-height: 120%;
+      font-size: fluid-size(16, 20);
+      border-radius: 50px;
+      color: var(--color-text-black);
+    }
+  }
+}

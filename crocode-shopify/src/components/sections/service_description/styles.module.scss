@@ -1,0 +1,86 @@
+.description {
+  padding: fluid-size(80, 120) fluid-size(40, 129) fluid-size(80, 120) fluid-size(40, 44);
+  background: var(--color-bg-white);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: fluid-size(40, 95);
+    align-items: start;
+
+    @include media-down(lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    font-size: fluid-size(32, 64);
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(5, 10);
+  }
+
+  &__text_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(20, 36);
+  }
+
+  &__text {
+    font-size: fluid-size(12, 20);
+    line-height: 181%;
+  }
+
+  &__image {
+    width: 592px;
+    height: 554px;
+    position: relative;
+
+    @include media-down(lg) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 592 / 554;
+    }
+  }
+
+  &__image_item {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(12, 20);
+    padding-left: fluid-size(20, 30);
+  }
+
+  &__list_item {
+    font-size: fluid-size(12, 20);
+    line-height: 181%;
+    list-style-type: disc;
+  }
+
+  &__h2 {
+    font-size: fluid-size(16, 28);
+    font-weight: 400;
+    line-height: 137%;
+    text-transform: uppercase;
+    margin-top: fluid-size(16, 27);
+  }
+
+  &__h3 {
+    font-size: fluid-size(14, 24);
+    font-weight: 400;
+    line-height: 137%;
+    text-transform: uppercase;
+    margin-top: fluid-size(12, 20);
+  }
+}

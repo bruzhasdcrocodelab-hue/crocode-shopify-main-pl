@@ -1,0 +1,42 @@
+.services {
+
+  &__inner {
+    position: relative;
+    padding: fluid-size(270, 300) fluid-size(20, 125) fluid-size(100, 600); 
+  }
+
+  &__title {
+    font-size: fluid-size(16, 36);
+    font-weight: 700;
+    line-height: 136%;
+    text-transform: uppercase;
+    color: var(--color-text-white);
+    margin-bottom: fluid-size(0, 15);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(150, 340);
+    margin: 0 auto;
+  }
+
+  &__column {
+      display: flex;
+      flex-direction: column;
+      gap: fluid-size(40, 70);
+      
+    }
+  &__name {
+      color: var(--color-text-white);
+    }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: fluid-size(35, 55);
+    max-width: fluid-size(400, 1280);
+    margin: 0 auto;
+  }
+}

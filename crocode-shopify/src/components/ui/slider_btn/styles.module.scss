@@ -1,0 +1,29 @@
+.btn {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fluid-size(70, 107); 
+    height: fluid-size(70, 107);
+    border-radius: 50%;
+    background: #CEE16F;
+    color: #000;
+
+    &:disabled {
+      border: 1px solid white;
+      color: white;
+      background: #000;
+    }
+  }
+
+  &:last-child {
+    .btn__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__icon {
+    width: fluid-size(15, 30);
+  }
+}

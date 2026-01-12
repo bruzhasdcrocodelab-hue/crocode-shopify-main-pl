@@ -1,0 +1,47 @@
+.card {
+  overflow: hidden;
+  border-radius: fluid-size(5, 16);
+
+  &--long {
+    .card__inner {
+      aspect-ratio: 532/658;
+    }
+
+    .card__background {
+      -webkit-mask-image: url('/images/cards/card-mask-long.svg');
+      mask-image: url('/images/cards/card-mask-long.svg');
+    }
+  }
+
+  &--wide {
+    .card__inner {
+      aspect-ratio: 532/415;
+    }
+
+    .card__background {
+      -webkit-mask-image: url('/images/cards/card-mask-wide.svg');
+      mask-image: url('/images/cards/card-mask-wide.svg');
+    }
+  }
+
+  &__inner {
+    position: relative;
+    
+  }
+
+  &__background {
+    object-fit: cover;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

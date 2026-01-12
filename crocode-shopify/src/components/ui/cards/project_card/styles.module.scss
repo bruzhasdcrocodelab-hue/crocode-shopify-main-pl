@@ -1,0 +1,28 @@
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 100%;
+    padding: fluid-size(10, 20) fluid-size(12, 22);
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-size: fluid-size(16, 36); 
+    line-height: 120%;
+    color: var(--color-text-white);
+  }
+
+  &__label {
+    text-transform: capitalize;
+    font-size: fluid-size(10, 16);
+    line-height: 120%;
+    color: var(--color-text-white);
+  }
+}

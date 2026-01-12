@@ -1,0 +1,44 @@
+.whyShopify {
+  padding: fluid-size(100, 200) fluid-size(40, 125);
+  color: var(--color-text-white);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(50, 80);
+  }
+
+  &__title {
+    font-size: fluid-size(32, 64);
+    line-height: 130%;
+    text-align: center;
+    color: var(--color-title-white);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(40, 60);
+  }
+
+  &__text {
+    font-size: fluid-size(14, 18);
+    line-height: 160%;
+    text-align: center;
+  }
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: fluid-size(30, 60);
+
+    @include media-down(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__column {
+    font-size: fluid-size(14, 16);
+    line-height: 170%;
+  }
+}

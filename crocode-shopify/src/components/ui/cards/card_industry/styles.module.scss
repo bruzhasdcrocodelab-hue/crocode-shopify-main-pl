@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  background: var(--color-bg-white);
+  overflow: hidden;
+
+  @include media-up(md) {
+    max-width: fluid-size(calc(395 / 2.5), 395);
+    min-height: fluid-size(calc(525 / 2.5), 525);
+    padding: fluid-size(10, 18) fluid-size(10, 18) fluid-size(10, 30);
+    border-radius: fluid-size(10, 20);
+  }
+
+  @include media-down(md) {
+    max-width: 340px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    min-height: 205px;
+  }
+
+  &__title, 
+  &__number {
+    text-transform: uppercase;
+    line-height: 137%;
+  }
+
+  &__number {
+    @include media-up(md) {
+      font-size: fluid-size(14, 36); 
+    }
+
+    @include media-down(md) {
+      font-size: fluid-size(16, 36); 
+    }
+  }
+
+  &__title {
+    @include media-up(md) {
+      font-size: fluid-size(16, 36);
+      margin-bottom: 5px;
+    }
+    
+    @include media-down(md) {
+      font-size: fluid-size(20, 36);
+      margin-bottom: 5px;
+    }
+  }
+
+  &__description {
+    text-transform: uppercase;
+    line-height: 137%;
+
+    @include media-up(md) {
+      font-size: fluid-size(10, 16);
+    }
+
+    @include media-down(md) {
+      font-size: fluid-size(12, 16);
+    }
+  }
+}

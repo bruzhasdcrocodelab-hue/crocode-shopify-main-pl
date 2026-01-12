@@ -1,0 +1,43 @@
+.accordion {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: fluid-size(20, 50);
+    cursor: pointer;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: fluid-size(16, 36);
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--color-text-white);
+  }
+
+  &__content {
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+    color: var(--color-text-white);
+
+    &_inner {
+      display: flex;
+      flex-direction: column;
+      gap: fluid-size(15, 40);
+      padding: fluid-size(25, 50) 0;
+    }
+
+    &_name {
+      font-size: fluid-size(10, 16);
+      line-height: 150%;
+      text-transform: uppercase;
+    }
+
+    &_text {
+      text-transform: uppercase;
+      font-size: fluid-size(12, 20);
+      line-height: 150%;
+    }
+  }
+}

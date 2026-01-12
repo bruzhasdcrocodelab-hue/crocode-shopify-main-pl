@@ -1,0 +1,137 @@
+.offers {
+  padding: fluid-size(80, 154) fluid-size(40, 121) fluid-size(130, 280) fluid-size(40, 121);
+  color: var(--color-text-white);
+
+  &__inner {
+    margin: 0 auto;
+  }
+
+  &__heading{
+    font-weight: 400;
+    text-align: center;
+    max-width: 1179px;
+    margin: 0 auto;
+  }
+
+  &__title{
+    font-size: fluid-size(32, 64);
+    text-transform: uppercase;
+    line-height: 137%;
+    margin-bottom: fluid-size(60, 88);
+  }
+
+  &__subtitle{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(16, 27.4);
+  }
+
+  &__subtitle_text{
+    text-transform: capitalize;
+    font-size:  fluid-size(16, 32);
+    line-height: 137%;
+  }
+
+  &__subtitle_list {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(12, 20);
+    padding-left: fluid-size(20, 30);
+  }
+
+  &__subtitle_list_item {
+    font-size:  fluid-size(16, 32);
+    line-height: 137%;
+    list-style-type: disc;
+  }
+
+  &__subtitle_h2 {
+    font-size:  fluid-size(18, 36);
+    font-weight: 400;
+    line-height: 137%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle_h3 {
+    font-size:  fluid-size(16, 32);
+    font-weight: 400;
+    line-height: 137%;
+    text-transform: uppercase;
+  }
+
+  &__grid {
+    margin-top: fluid-size(70, 100);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: fluid-size(40, 80);
+
+    @include media-down(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+  &__card_title {
+    font-size: fluid-size(20, 36);
+    font-weight: 400;
+    line-height: 137%;
+    margin-bottom: fluid-size(30, 49);
+    text-transform: uppercase;
+  }
+
+  &__card_text {
+    font-size: fluid-size(12, 20);
+    line-height: 137%;
+  }
+
+  &__card_texts{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(16, 27.4);
+  }
+
+  &__final_text{
+    margin-top: fluid-size(60, 88);
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(16, 27.4);
+  }
+}
+
+.underlined {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.offers__list {
+  display: flex;
+  flex-direction: column;
+  gap: fluid-size(16, 27.4);
+  padding-left: fluid-size(20, 30);
+}
+
+.offers__list_item {
+  font-size: fluid-size(12, 20);
+  line-height: 137%;
+  list-style-type: disc;
+}
+
+.offers__h2 {
+  font-size: fluid-size(16, 28);
+  font-weight: 400;
+  line-height: 137%;
+  text-transform: uppercase;
+}
+
+.offers__h3 {
+  font-size: fluid-size(14, 24);
+  font-weight: 400;
+  line-height: 137%;
+  text-transform: uppercase;
+}

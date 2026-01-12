@@ -1,0 +1,31 @@
+.result {
+  background: black;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: fluid-size(55, 95);
+    padding: 120px 35px 235px;
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--color-title-white);
+    max-width: fluid-size(450, 1150);
+  }
+
+  &__content {
+    display: flex;
+
+    @include media-up(lg) {
+      gap: fluid-size(15, 30);
+    }
+
+    @include media-down(lg) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}

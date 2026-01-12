@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(npm run build:*)",
+      "Bash(cat:*)",
+      "WebFetch(domain:docs.google.com)",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_hover",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_run_code",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_resize",
+      "Bash(npm run dev:*)",
+      "mcp__playwright__browser_click",
+      "Bash(find:*)",
+      "Bash(ls:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

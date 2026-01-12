@@ -1,0 +1,83 @@
+.comments {
+  padding: fluid-size(75, 240) fluid-size(40, 203) fluid-size(160, 240); 
+  color: white;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: fluid-size(60, 80);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
+    text-transform: uppercase;
+    color: var(--color-title-white);
+  }
+
+  &__texts{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(13, 20);
+    font-size: fluid-size(16, 20);
+    margin-bottom: fluid-size(35, 60);
+    padding: 0 fluid-size(0, 100);
+    text-align: center;
+    line-height: 217%;
+  }
+
+}
+
+.slider {
+  max-width: fluid-size(312, 1290); 
+  margin: 0 auto;
+
+  &__comment {
+    position: relative;
+    border: 2px solid white;
+    border-radius: fluid-size(44, 77);
+  }
+
+  &__comment_btk {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    width: fluid-size(40, 110);
+
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+      transform: translateX(calc((100% + fluid-size(0, 10)) * -1)) translateY(-50%) rotate(180deg);
+    }
+
+    &:nth-child(2) {
+      bottom: 0;
+      right: 0;
+      transform: translateX(calc(100% + fluid-size(0, 10))) translateY(50%);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: fluid-size(35, 60);
+  }
+}
+
+.embla {
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+}

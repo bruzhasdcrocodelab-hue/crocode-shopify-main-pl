@@ -1,0 +1,28 @@
+.industries {
+  &__inner {
+    position: relative;
+    padding: fluid-size(80, 165) fluid-size(25, 125) fluid-size(150, 245); 
+  }
+
+  &__subtitle {
+    margin-bottom: fluid-size(50, 180);
+    margin-top: fluid-size(17, 20);
+    font-size: fluid-size(16, 20);
+    line-height: 217%;
+  }
+
+  &__content {
+    gap: fluid-size(13, 20);
+
+    @include media-up(md) {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    @include media-down(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

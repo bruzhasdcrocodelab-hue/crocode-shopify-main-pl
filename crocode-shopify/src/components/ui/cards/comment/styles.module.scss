@@ -1,0 +1,29 @@
+.comment {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: fluid-size(44, 100) fluid-size(18, 50) fluid-size(25, 100);
+    color: var(--color-title-white);
+  }
+
+  &__text {
+    font-size: fluid-size(12, 36);
+    line-height: 137%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: fluid-size(28, 35);
+  }
+
+  &__author {
+    font-size: fluid-size(16, 20);
+    line-height: 137%;
+    text-align: center;
+  }
+
+  &__project {
+    font-size: fluid-size(12, 16);
+    line-height: 137%;
+    text-align: center;
+  }
+}

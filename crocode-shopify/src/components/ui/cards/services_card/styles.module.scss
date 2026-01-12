@@ -1,0 +1,128 @@
+$transition: 0.3s;
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  outline: 1px solid white;
+  transition: $transition;
+
+  @include media-up(lg) {
+    
+  }
+
+  &:hover {
+    outline: none;
+
+    .card__inner {
+      color: var(--color-text-black);
+      background: white;
+    }
+
+    .card__arrow {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: $transition;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    color: var(--color-text-white);
+    transition: $transition;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+
+    @include media-up(lg) {
+      padding: fluid-size(0, 20) fluid-size(5, 30) fluid-size(0, 25);
+
+      &--wide {
+        -webkit-mask-image: url('/images/cards/card-mask-wide.svg');
+        mask-image: url('/images/cards/card-mask-wide.svg');
+      }
+
+      &--toll {
+        -webkit-mask-image: url('/images/cards/card-mask-long.svg');
+        mask-image: url('/images/cards/card-mask-long.svg');
+      }
+    }
+
+    @include media-down(lg) {
+      padding: 20px fluid-size(20, 30) fluid-size(20, 25);
+      &--wide {
+        -webkit-mask-image: url('/images/cards/card-mask-wide.svg');
+        mask-image: url('/images/cards/card-mask-wide.svg');
+      }
+
+      &--toll {
+        -webkit-mask-image: url('/images/cards/card-mask-wide.svg');
+        mask-image: url('/images/cards/card-mask-wide.svg');
+      }
+    }
+  }
+
+  &__number {
+    line-height: 137%;
+
+    @include media-up(lg) {
+      font-size: fluid-size(10, 36);
+    }
+
+    @include media-down(lg) {
+      font-size: fluid-size(16, 36);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    line-height: 137%;
+    text-transform: uppercase;
+
+    @include media-up(lg) {
+      font-size: fluid-size(7, 36);
+    }
+
+    @include media-down(lg) {
+      font-size: fluid-size(20, 36);
+    }
+  }
+
+  &__description {
+    text-align: justify;
+    text-transform: uppercase;
+    line-height: 137%;
+
+    @include media-up(lg) {
+      font-size: fluid-size(7, 16);
+    }
+
+    @include media-down(lg) {
+      font-size: fluid-size(12, 16);
+    }
+  }
+}

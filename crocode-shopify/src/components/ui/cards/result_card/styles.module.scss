@@ -1,0 +1,59 @@
+.card {
+  border: 2px solid white;
+  border-radius: 16px;
+
+  @include media-up(lg) {
+    width: fluid-size(100, 415); 
+    aspect-ratio: 415/532;
+  }
+
+  @include media-down(lg) {
+    width: fluid-size(299, 350); 
+    aspect-ratio: 299/369;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100%;
+
+    @include media-up(lg) {
+      padding: fluid-size(15, 25) fluid-size(10, 20) 0;
+    }
+
+    @include media-down(lg) {
+      padding: fluid-size(25, 35) fluid-size(20, 30) 0;
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    line-height: 120%;
+    color: var(--color-text-white);
+
+    @include media-up(lg) {
+      font-size: fluid-size(16, 36);
+    }
+
+    @include media-down(lg) {
+      font-size: fluid-size(20, 36);
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--color-text-white);
+
+    @include media-up(lg) {
+      font-size: fluid-size(40, 128);
+    }
+
+    @include media-down(lg) {
+      font-size: fluid-size(96, 100);
+    }
+  }
+}

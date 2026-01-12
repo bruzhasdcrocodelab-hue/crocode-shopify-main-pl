@@ -1,0 +1,454 @@
+{
+  "Header": {
+    "nav": {
+      "our-work": "Our Work",
+      "services": "Services",
+      "about-us": "About Us",
+      "contact": "Contact"
+    },
+    "button": {
+      "text": "Get In Touch"
+    }
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Best Shopify development agency — Crocode",
+      "subtitle": "We know for sure that creating a store is incredibly simple and very easy. Making it sell, grow, and make a profit without constant interference is a task for professionals. We don't just develop stores. We are building business web tools that work 24/7, attract customers, and convert them into buyers, even while you are sleeping. We are producers of high-quality web products.",
+      "button": {
+        "text": "Discuss your project"
+      }
+    },
+    "why-shopify": {
+      "title": "Why Shopify is not just a «constructor»",
+      "message": "Many people think that <strong>Shopify</strong> is like Lego for stores: put blocks, add pictures, and that's it. But the reality is different. Yes, the platform is <strong>easy to launch</strong>, but the <strong>maximum potential</strong> is revealed only with <strong>proper configuration</strong>: catalog logic, download speed, UX architecture, and <strong>integrations</strong> with CRM, analytics, email, and SMS automation.",
+      "text": "Without a well thought-out structure, user-friendly UX, and technical precision, even the most visually impressive store will remain just a showcase — beautiful design but lifeless. He can impress, but not sell.\n\nOur shopify website development company set up everything so that each element works for the result: from the first landing page that the customer visits to the final screen with the inscription «Thank you for the order». Every button, every word, and every second of loading — all this either brings the purchase closer or pushes it away. We remove barriers, build trust, and lead the user along a path where the decision to «buy» comes naturally. Because the store should not just exist — it should earn money. To do this, you need an assistant who will develop."
+    },
+    "about-us": {
+      "title": "What are we doing",
+      "message": "<strong>Shopify web development company</strong> are an agency that deals with  <strong>only Shopify</strong>. There is no «doing everything in a row»: no landing pages of website on Tilda, no corporate websites on WordPress, no custom CMS. There is only <strong>one platform</strong>, and <strong>a deep knowledge of its internals</strong>.",
+      "text": "This focus provides real advantages. We instantly understand which applications really solve problems, and which ones only slow down the store, creating «technical garbage». We see typical pitfalls in advance — for example, how a dozen \"useful\" widgets kill download speed and kill conversion. And we know how to design stores so that they can safely withstand growth: from the first dozen orders to a multimillion-dollar turnover and tens of thousands of sales per month.\n\nFor developer, your store is not a collection of pages, but a living system built around your product, your audience, ecommerce and your business goals. Everything from the architecture of the catalog to the logic of email chains works as a single mechanism. And this is what turns the site from «just a showcase» into a real sales engine."
+    },
+    "clients": {
+      "title": "Trusted by world-class ecommerce businesses"
+
+    },
+    "industries": {
+      "title": "Industries Our services: from idea to growth",
+      "text": "Even before writing the first line of code, we, as good strategist, dive into your niche:",
+      "cards": {
+        "card1": {
+          "title": "We analyze competitors",
+          "text": "Without a deep understanding of the market, even the most spectacular design will remain a «wrapper» without content, unable to generate sales."
+        },
+        "card2": {
+          "title": "Identify the strengths of your unique sales offer (USP)",
+          "text": "The full-fledged development of the store on the Shopify platform is carried out on a turnkey basis from domain registration and hosting selection to fine-tuning of payment systems, shipping rules, and tax parameters. Every detail is thought out, taking into account your branding strategy, so that the store does not just function but reflects the essence of your business."
+        },
+        "card3": {
+          "title": "Study the behavior of the target audience",
+          "text": "Our design is not about aesthetics for the sake of aesthetics, but about sales.\n\nAnd most importantly, we don't disappear after launch. Our clients receive constant technical support and regular updates, conduct A/B tests, and receive personalized recommendations for increasing conversion rates and average receipts. We don't just create stores; we help them grow."
+        }
+      }
+    },
+    "scalable": {
+      "title": "Shopify Plus Agency for Scalable",
+      "subtitle": "We don't believe in «universal patterns», especially when it comes to your business",
+      "text":"Shopify offers hundreds of ready-made themes, and at first glance it may seem that it is enough to select one of them, insert a logo, and the store is ready for sale. But in fact, using a template is like wearing someone else's suit: even if it is «sized» and looks good, it will never fit perfectly, will not convey the character of your brand, will not take into account the characteristics of your audience and will not reflect the logic of your business processes.\n\nThat's why we're going the other way. Sometimes we take the basic theme as a basis, but completely rework it — to such an extent that there is no trace of the original. We make sure that every element, from the catalog structure to micro animations, works for your brand and customer convenience. And in the case of atypical tasks — whether it's complex collections, interactive configurators, flexible subscriptions, B2B cabinets with personalized prices, or multi-level navigation — we create a completely custom theme from scratch. Not for the sake of aesthetics, but for the sake of functionality, speed and, most importantly, results.\n\nIt is important for shopify website agency that the store does not just \"look\" like, but works exactly as you need: without compromises, without crutches and without feeling that you are \"squeezed\" into someone else's structure. Because a brand built on standards rarely becomes a leader. And those who think differently deserve a website that thinks the same way.\n\nExample: for a cosmetics brand, we have created a store with a personalized selection of care based on a questionnaire. For a furniture manufacturer: 3D visualization of products directly in the card. For a fashion brand, the «lookbook with purchase» system. Each client has his own task. We have our own solution.",
+      "button": {
+        "text": "Explore case studies"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "cards": {
+        "card1": {
+          "title": "Design & Development",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        },
+        "card2": {
+          "title": "CRO",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        },
+        "card3": {
+          "title": "SEO",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        },
+        "card4": {
+          "title": "Email & SMS New build project",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        }
+      }
+    },
+    "comments": {
+      "title": "Why customers stay with us for a long time",
+      "text": "Shopify web development agency do not work as contractors who just «work out the task», but as partners who think the same way as you, the business owner. For us, not only the process is important, but also the real result: sales growth, customer loyalty, and investment efficiency. That's why we don't just make a website or run ads — we are responsible for making sure that these tools really work for your business.\n\nSecurity is not a formality for us. We first implement all edits and updates into the test environment to check how they will affect the system. Our analysts study and verify everything beforehand. Backup is enabled by default, and access to critical data is strictly limited. Your business should not suffer because of technical experiments, so we act cautiously but confidently.\n\nAnd most importantly, we measure success not by the number of pages created or banners launched, but by real business metrics: conversion growth, an increase in the average receipt for marketing, and an increase in the customer's lifetime value (LTV). If this does not happen, we return to the drawing board. Because for our team, a good result is not a completed order, but your satisfied customer and growing profit.",
+      "items": {
+        "item1": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        },
+        "item2": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        },
+        "item3": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        },
+        "item4": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        }
+      }
+    },
+    "experts": {
+      "title": "Shopify experts",
+      "subtitle": "Are you ready to stop spending your budget on a store that doesn't sell?",
+      "text": "If your current website «just exists» but is not «working for growth», it's time to change something. We don't promise «1000 orders per week». But we will definitely make sure that every ruble invested in your store makes a profit. We will do our best for this.\n\nWrite to us, and we'll tell you how you can improve your Shopify store, even if you're not ready for a complete redesign yet. Sometimes it's enough to make a couple of edits to increase the conversion rate by 20-30%. These are not just numbers but verified information. Many clients who have already contacted us have seen from their own experience that this is possible. You just need to entrust this task to us. We will do everything to ensure that your digital business successfully develops and flourishes.\n\nYour store may not just be a website — it may become your best employee. Let's do it together.",
+      "button": {
+        "text": "get in touch"
+      }
+    }
+  },
+  "OurWork": {
+    "hero": {
+      "title": "We've helped top brands and startups create high-performance ecommerce websites",
+      "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
+    }
+  },
+  "ServicesPage": {
+    "title": "Services",
+    "hero": {
+      "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+      "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands."
+    },
+    "navigation": {
+      "development": "Development",
+      "design": "Design",
+      "migration": "Migration",
+      "integration": "Integration",
+      "growth": "Growth"
+    },
+    "services": {
+      "development": {
+        "title": "Development",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "design": {
+        "title": "Design",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "migration": {
+        "title": "Migration",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "integration": {
+        "title": "Integration",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      }
+    }
+  },
+  "ServicePage": {
+    "ServiceDescription":{
+      "title": "About this service",
+      "imageAlt": "Service illustration"
+    },
+    "ShopifyOffers":{
+      "title": "Why Shopify"
+    },
+    "VideoSection":{
+      "videoTitle": "Video about our work"
+    }
+  },
+  "AboutUsPage": {
+    "hero": {
+      "title": "Experienced professionals with a positive attitude and a genuine passion for creating the best online shopping solutions that inspire and amaze",
+      "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
+    },
+    "results": {
+      "title": "Our in-house, skilled team support brands through transformative ecommerce strategies"
+    },
+    "ShopifyPlusHighlights": {
+      "title": "Shopify Plus Agency for Scalable",
+      "items": {
+        "item1": {
+          "title": "Creativity",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        },
+        "item2": {
+          "title": "Technical Excellence",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        },
+        "item3": {
+          "title": "Creativity",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        },
+        "item4": {
+          "title": "People-first",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        }
+      }
+    },
+    "lets-talk": {
+      "title": "Let's talk ecommerce",
+      "description": "We are a certified Shopify agency specializing in partnering with brands to create, build, launch, maintain, and expand Shopify and Shopify Plus stores. As a trusted Shopify partner, we’re here whenever you’re ready. Get in touch with our team to discuss your project.",
+      "button": {
+        "text": "Get in touch"
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Ready to start your partnership for growth?",
+    "form": {
+      "title": "Let's talk about your project",
+      "inputs": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "What's your first name?",
+          "errors": {
+            "required": "First name is required",
+            "minLen": "First name must be at least 2 characters"
+          }
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "What's your last name?",
+          "errors": {
+            "required": "Last name is required",
+            "minLen": "Last name must be at least 2 characters"
+          }
+        },
+        "companyName": {
+          "label": "Company name",
+          "placeholder": "What's your company name?",
+          "errors": {
+            "required": "Company name is required"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "What's your email?",
+          "errors": {
+            "required": "Email is required",
+            "notValid": "Please enter a valid email address"
+          }
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "What's your phone?",
+          "errors": {
+            "required": "Phone is required",
+            "notValid": "Please enter a valid phone number"
+          }
+        },
+        "budget": {
+          "label": "Budget",
+          "placeholder": "What's your budget?",
+          "errors": {
+            "required": "Budget is required"
+          }
+        },
+        "aboutProject": {
+          "label": "Tell us about your project",
+          "placeholder": "Describe your project"
+        },
+        "checkbox": {
+          "label": "Join our ecommerce newsletter to receive free ecommerce guides, tips, tricks & more",
+          "errors": {
+            "required": "You must agree to join the newsletter"
+          }
+        }
+      },
+      "button": {
+        "text": "Submit enquiry",
+        "submitting": "Submitting...",
+        "errors": {
+          "required": "Please complete all required fields"
+        }
+      }
+    },
+    "map": {
+      "title": "Our offices",
+      "address": "al. Tadeusza Rejtana 53A/303 35-326 Rzeszów, Poland"
+    }
+  },
+  "WhyCrocodePage": {
+    "hero": {
+      "title": "Our Approach",
+      "subtitle": "We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates.We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates"
+    },
+    "ourService": {
+      "card1": {
+        "title": "Creativity",
+        "description": "We focus on UX and UI design to create engaging, seamless Shopify experiences that guide customers effortlessly through the store. Our in-house design and development team craft unique, memorable sites aligned with omni-channel campaigns and ecommerce goals. We also prioritize brand identity, logos, and conversion-driven strategies."
+      },
+      "card2": {
+        "title": "Technology",
+        "description": "As Shopify Experts, we deliver advanced software using modern tech and secure integrations, partnering with top providers to enhance Shopify’s features and ensure future-ready, high-performance solutions."
+      },
+      "card3": {
+        "title": "Data",
+        "description": "Our Shopify developers build ecommerce stores focused on commercial value and business goals. Guided by data and analytics, we provide strategic insights and challenge page status quo to optimize performance. By combining experience, traffic data, and creativity, we maximize the benefits of the Shopify platform and deliver results through tailored marketing strategies."
+      }
+    },
+    "AgencyDescription": {
+      "title": "People-first agency",
+      "text1": "We are a highly skilled, multi-disciplinary Shopify agency dedicated to delivering innovative, data-driven ecommerce solutions and exceptional customer experiences. At the heart of our work is a people-first philosophy that values trust, independence, and personal growth. This approach creates an open environment where our team feels empowered to challenge conventions and deliver the best outcomes for our merchants.",
+      "text2": "Our remote-first culture encourages creative freedom by avoiding micromanagement, allowing our specialists to think outside the box and go the extra mile. We place equal importance on the experience of our merchants and our team members, fostering a supportive community that genuinely cares. This strong foundation of people-first values sets us apart and enables us to bring exceptional personal and commercial value to every project we undertake."
+    },
+    "whyChooseUs": {
+      "title": "Why Choose crocode?",
+      "description": "Creative collaboration underpins everything we do as Shopify Experts in London. We build close-working relationships with our clients and partners to work with goals in mind whilst offering a wealth of digital expertise. From startup-ups to world-leading brands, we deliver ecommerce strategies to deliver Shopify & Shopify Plus stores that perform.",
+      "cards": {
+        "card1": {
+          "text": "We go beyond standard solutions to create Shopify stores that challenge the conventions of design and technical capability. Our goal is not just to implement features, but to create a digital experience that delights your customers and gives you a real competitive advantage."
+        },
+        "card2": {
+          "text": "We believe that great decisions come from data, not guesses. Our team delves into your store's analytics to identify growth points, optimize the user experience, and increase conversion. We build not just websites, but powerful tools for scaling your business."
+        },
+        "card3": {
+          "text": "Our work doesn't end on launch day. We become your long-term technical partners, ensuring your store runs smoothly, providing prompt support, and helping you adapt to new challenges. Your success is our success, and we are committed to supporting you at every step of the way."
+        },
+        "card4": {
+          "text": "As certified Shopify and Shopify Plus experts, we have an in-depth understanding of the platform. This allows us to recommend the most effective and modern solutions, leverage best practices, and avoid common pitfalls, saving you time and budget."
+        }
+      }
+    }
+  },
+  "Footer": {
+    "message": "Let's talk ecommerce",
+    "buttons": {
+      "contact": {
+        "text": "Get in Touch"
+      }
+    },
+    "columns": {
+      "what-we-do": {
+        "title": "What we do",
+        "nav": {
+          "our-work":"Our Work",
+          "services": "Services",
+          "about-us":"About Us",
+          "why-crocode": "Why Crocode",
+          "faqs": "FAQS"
+        }
+      },
+      "get-in-touch": {
+        "title": "Get in touch",
+        "nav": {
+          "email": "welcome@crocode.io",
+          "contact": "Contact"
+        }
+      }
+    },
+    "copyright": "© 2025 KROKOD Sp. z o.o. All Rights Reserved"
+  },
+  "ServiceDetailPage": {
+    "design-development": {
+      "hero": {
+        "title": "DesiDesign & Developmentgn",
+        "subtitle": "We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates.We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates"
+      },
+      "description": {
+        "title": "Here is a revised version tailored for DesiDesign & Development",
+        "text1": "As a specialized Shopify Migration Agency, DesiDesign & Development excels in replatforming ecommerce stores to Shopify and Shopify Plus with precision and care. We recognize that migrating your online store to a new platform can be challenging, which is why our expert Shopify migration services provide comprehensive support, ensuring a smooth and efficient transition from beginning to end.",
+        "text2": "Our process includes thorough data architectural analysis, secure exporting and importing of data, and meticulous replatforming to guarantee that your site content, customer information, and order histories remain intact and unaltered. Whether you want to migrate from Magento, WooCommerce, BigCommerce, or any other ecommerce platform, DesiDesign & Development is your trusted partner for a seamless Shopify migration."
+      },
+      "whyShopify": {
+        "title": "Why Choose to Shopify?",
+        "mainText": "Creative collaboration underpins everything we do as Shopify Experts in London. We build close-working relationships with our clients and partners to work with goals in mind whilst offering a wealth of digital expertise."
+      },
+      "offers": {
+        "offer1": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the __go-to option__ for ecommerce merchants as it is one of the most __scalable, feature-rich__ and fastest growing ecommerce platforms that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a __plethora of features__ and 6,000+ apps that allow merchants to nurture their business and deliver a more __powerful ecommerce experience__. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        },
+        "offer2": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the go-to option for ecommerce merchants as it is one of the most scalable, feature-rich and fastest growing ecommerce __platforms__ that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a plethora of features and 6,000+ apps that allow merchants to nurture their business and deliver a more powerful ecommerce experience. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        },
+        "offer3": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the go-to option for ecommerce merchants as it is one of the most scalable, feature-rich and fastest growing ecommerce platforms that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a plethora of features and 6,000+ apps that allow merchants to nurture their business and deliver a more powerful ecommerce experience. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        },
+        "offer4": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the go-to option for ecommerce merchants as it is one of the most scalable, feature-rich and fastest growing ecommerce platforms that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a plethora of features and 6,000+ apps that allow merchants to nurture their business and deliver a more powerful ecommerce experience. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        }
+      },
+      "details": {
+        "title": "More details about the service",
+        "text1": "Get the advantage of comprehensive agile support framework incorporating: running marketing campaigns by implementing advanced technologies initiatives that drive long-term growth.",
+        "text2": "Our team specializes in comprehensive digital business transformation. We help companies adapt to modern realities by implementing advanced technological solutions that increase efficiency and competitiveness."
+      },
+      "included": {
+        "title": "What is included in the service?",
+        "item1": "Analysis of current business processes and identification of growth points",
+        "item2": "Development of a personalized digital transformation strategy",
+        "item3": "Implementation of modern technologies and process automation",
+        "item4": "Staff training and 24/7 technical support"
+      },
+      "video": {
+        "title": "Video about our work",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "Header": {
+    "nav": {
+      "our-work": "Nasze Realizacje",
+      "services": "Usługi",
+      "about-us": "O nas",
+      "contact": "Kontakt"
+    }
+  },
+  "ServicesPage": {
+    "title": "Usługi",
+    "hero": {
+      "description": "Jesteś nowy w Shopify lub chcesz wzmocnić istniejący sklep? Możesz na nas liczyć.",
+      "description2": "Nasz zespół 40 ekspertów Shopify jest tutaj, aby pomóc Ci zbudować i rozwinąć Twój sklep internetowy. Mamy ponad 10 lat doświadczenia w tej dziedzinie, więc jesteś w bezpiecznych rękach."
+    },
+    "navigation": {
+      "development": "Rozwój",
+      "design": "Projektowanie",
+      "migration": "Migracja",
+      "integration": "Integracja",
+      "growth": "Wzrost"
+    },
+    "services": {
+      "development": {
+        "title": "Rozwój",
+        "description": "Jesteś nowy w Shopify lub chcesz wzmocnić istniejący sklep? Możesz na nas liczyć.",
+        "description2": "Nasz zespół 40 ekspertów Shopify jest tutaj, aby pomóc Ci zbudować i rozwinąć Twój sklep internetowy. Mamy ponad 10 lat doświadczenia w tej dziedzinie, więc jesteś w bezpiecznych rękach.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Dowiedz się więcej"
+      },
+      "design": {
+        "title": "Projektowanie",
+        "description": "Jesteś nowy w Shopify lub chcesz wzmocnić istniejący sklep? Możesz na nas liczyć.",
+        "description2": "Nasz zespół 40 ekspertów Shopify jest tutaj, aby pomóc Ci zbudować i rozwinąć Twój sklep internetowy. Mamy ponad 10 lat doświadczenia w tej dziedzinie, więc jesteś w bezpiecznych rękach.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Dowiedz się więcej"
+      },
+      "migration": {
+        "title": "Migracja",
+        "description": "Jesteś nowy w Shopify lub chcesz wzmocnić istniejący sklep? Możesz na nas liczyć.",
+        "description2": "Nasz zespół 40 ekspertów Shopify jest tutaj, aby pomóc Ci zbudować i rozwinąć Twój sklep internetowy. Mamy ponad 10 lat doświadczenia w tej dziedzinie, więc jesteś w bezpiecznych rękach.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Dowiedz się więcej"
+      },
+      "integration": {
+        "title": "Integracja",
+        "description": "Jesteś nowy w Shopify lub chcesz wzmocnić istniejący sklep? Możesz na nas liczyć.",
+        "description2": "Nasz zespół 40 ekspertów Shopify jest tutaj, aby pomóc Ci zbudować i rozwinąć Twój sklep internetowy. Mamy ponad 10 lat doświadczenia w tej dziedzinie, więc jesteś w bezpiecznych rękach.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Dowiedz się więcej"
+      },
+      "growth": {
+        "title": "Wzrost",
+        "description": "Jesteś nowy w Shopify lub chcesz wzmocnić istniejący sklep? Możesz na nas liczyć.",
+        "description2": "Nasz zespół 40 ekspertów Shopify jest tutaj, aby pomóc Ci zbudować i rozwinąć Twój sklep internetowy. Mamy ponad 10 lat doświadczenia w tej dziedzinie, więc jesteś w bezpiecznych rękach.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Dowiedz się więcej"
+      }
+    }
+  },
+  "ServiceDetailPage": {
+    "design-development": {
+      "hero": {
+        "title": "Projektowanie i Rozwój",
+        "subtitle": "Jesteśmy wiodącą agencją Shopify Experts, która pomaga witrynom e-commerce rosnąć poprzez zwiększanie sprzedaży, rozszerzanie asortymentu produktów i zwiększanie współczynników konwersji."
+      },
+      "description": {
+        "title": "Oto poprawiona wersja dostosowana do Projektowania i Rozwoju",
+        "text1": "Jako agencja premium Shopify, rozwijając sklepy e-commerce gotowe na wymagania długo/średnioterminowe, starannie i właściwie planujemy każdy szczegół z odpowiednim UX. Wspieramy klientów jako zaufany partner w ciągle ewoluującym krajobrazie e-commerce.",
+        "text2": "Nasze projekty wymagają głębokiego zrozumienia i najwyższej jakości realizacji, ściśle współpracujemy z Twoim biznesem, rozwojem i dostawcami, oraz partnerami, i wdrażamy, jako zwycięzca na szybko rozwijającym się i agresywnym rynku."
+      },
+      "whyShopify": {
+        "title": "Dlaczego wybrać Shopify?",
+        "mainText": "Kreatywna współpraca stanowi podstawę wszystkiego, co robimy jako eksperci Shopify. Budujemy bliskie relacje robocze z naszymi klientami i partnerami, aby pracować z myślą o celach, oferując jednocześnie bogactwo cyfrowej wiedzy."
+      },
+      "offers": {
+        "offer1": {
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
+        },
+        "offer2": {
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
+        },
+        "offer3": {
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
+        },
+        "offer4": {
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
+        }
+      },
+      "details": {
+        "title": "Więcej szczegółów o usłudze",
+        "text1": "Uzyskaj przewagę kompleksowego zwinnego wsparcia włączając: prowadzenie kampanii marketingowych poprzez wdrażanie zaawansowanych inicjatyw technologicznych, które napędzają długoterminowy wzrost.",
+        "text2": "Nasz zespół specjalizuje się w kompleksowej transformacji cyfrowej biznesu. Pomagamy firmom dostosować się do nowoczesnych realiów poprzez wdrażanie zaawansowanych rozwiązań technologicznych, które zwiększają efektywność i konkurencyjność."
+      },
+      "included": {
+        "title": "Co jest zawarte w usłudze?",
+        "item1": "Analiza obecnych procesów biznesowych i identyfikacja punktów wzrostu",
+        "item2": "Opracowanie spersonalizowanej strategii transformacji cyfrowej",
+        "item3": "Wdrożenie nowoczesnych technologii i automatyzacja procesów",
+        "item4": "Szkolenie personelu i całodobowe wsparcie techniczne"
+      },
+      "video": {
+        "title": "Wideo o naszej pracy",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.section {
+
+  &__inner {
+    padding: fluid-size(80, 165) fluid-size(30, 125) fluid-size(65, 95);
+  }
+
+  &__header {
+    margin-bottom: fluid-size(40, 120);
+  }
+
+  &__title {
+    color: var(--color-title-white);
+    margin-bottom: fluid-size(27, 50);
+
+    &--centered {
+      color: var(--color-text-black);
+      font-size: fluid-size(32, 64);
+      font-weight: 400;
+      line-height: 137%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__subtitle, &__texts {
+    color: var(--color-text-white);
+  }
+
+  &__texts{
+    font-size: fluid-size(16, 20);
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(13, 20);
+    margin-top: fluid-size(27, 50);
+    line-height: 217%;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.slider {
+  position: relative;
+  margin-bottom: fluid-size(80, 120);
+
+  &__card {
+    width: fluid-size(220, 460);
+    height: fluid-size(310, 640);
+    border-radius: 20px;
+    background: white;
+  }
+
+  &__btn {
+    &_prev, 
+    &_next {
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+    }
+
+    &_prev {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &_next {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+}
+
+.embla {
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__slider {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+}

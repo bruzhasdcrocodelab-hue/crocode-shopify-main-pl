@@ -1,0 +1,51 @@
+.summary {
+  position: relative;
+
+  &__inner {
+    display: flex;
+    
+    justify-content: space-between;
+    padding: fluid-size(50, 190) fluid-size(20, 100) fluid-size(60, 150); 
+
+    @include media-up(lg) {
+      gap: 50px;
+    }
+
+    @include media-down(lg) {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include media-up(lg) {
+      max-width: 67%;
+    }
+  }
+
+  &__message {
+    text-align: justify;
+    font-size: fluid-size(12, 20);
+    line-height: 280%;
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    max-width: 300px;
+
+    &_item {
+      font-size: fluid-size(12, 20); 
+      line-height: 130%;
+      a {
+        color: var(--color-text-black);
+      }
+    }
+  }
+}
