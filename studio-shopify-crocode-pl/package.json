@@ -1,5 +1,5 @@
 {
-  "name": "crocode-site-pl",
+  "name": "shopify-crocode",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
@@ -15,15 +15,16 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/document-internationalization": "^4.1.1",
-    "@sanity/vision": "^5.2.0",
+    "@sanity/client": "^7.14.0",
+    "@sanity/document-internationalization": "^4.0.0",
+    "@sanity/vision": "^4.10.2",
     "react": "^19.1",
     "react-dom": "^19.1",
-    "sanity": "^5.2.0",
+    "sanity": "^4.10.2",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^6.0.0",
+    "@sanity/eslint-config-studio": "^5.0.2",
     "@types/react": "^19.1",
     "eslint": "^9.28",
     "prettier": "^3.5",

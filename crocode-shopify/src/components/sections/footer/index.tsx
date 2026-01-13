@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {!isServiceDetailPage && (
+          {/* {!isServiceDetailPage && ( */}
             <div className={styles.footer__menu}>
               <div className={styles.footer__column}>
                 <p className={styles.footer__column_title}>{t('columns.what-we-do.title')}</p>
@@ -64,7 +64,7 @@ const Footer = () => {
                 <Link href='/contact' className={styles.footer__list_item}>{t(`columns.get-in-touch.nav.contact`)}</Link>
               </div>
             </div>
-          )}
+          {/* )} */}
         </div>
         <div className={styles.footer__bottom}>
           <div className={styles.footer__bottom_content}>
@@ -72,8 +72,8 @@ const Footer = () => {
             <p className={styles.footer__copyright}>{t('copyright')}</p>
           </div>
           <nav className={styles.footer__nav}>
-            <Link className={styles.footer__nav_item} href={'/'}>Shopify Agency</Link>
-            <Link className={styles.footer__nav_item} href={'/'}>Privacy Policy</Link>
+            <Link className={styles.footer__nav_item} href={'/'}>Agencja Shopify</Link>
+            <Link className={styles.footer__nav_item} href={'/'}>Polityka prywatności</Link>
           </nav>
         </div>
       </div>
