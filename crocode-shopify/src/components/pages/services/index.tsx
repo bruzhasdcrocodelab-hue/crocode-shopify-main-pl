@@ -22,9 +22,9 @@ const ServicesPage = ({ serviceCategories }: TProps) => {
       <div className={styles.services}>
         <div className={styles.services__inner}>
           {/* Hero Section */}
+          <h1 className={styles.services__title}>{t('title')}</h1>
           <div className={styles.services__hero}>
             <div className={styles.services__heroContent}>
-              <h1 className={styles.services__title}>{t('title')}</h1>
               <div className={styles.services__description}>
                 <p>{t('hero.description')}</p>
                 <p>{t('hero.description2')}</p>
