@@ -123,7 +123,7 @@ const Header = ({ servicesGrouped }: TProps) => {
               </li>
             ))}
           </nav>
-          <Button className={styles.header__button} as='link' href='/contact' styleType='secondary' text='Get in Touch'/>
+          <Button className={styles.header__button} as='link' href='/contact' styleType='secondary' text='Skontaktuj się z nami'/>
         </div>
         <Burger className={styles.header__burger} theme={theme} isActive={menuIsOpen} setIsActive={() => setMenuIsOpen(!menuIsOpen)}/>
       </div>

@@ -17,7 +17,14 @@
       "Bash(npm run dev:*)",
       "mcp__playwright__browser_click",
       "Bash(find:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "mcp__Sanity__query_documents",
+      "Bash(npm install:*)",
+      "Bash(npx sanity debug:*)",
+      "Bash(SANITY_SOURCE_TOKEN=\"sklzL7S8tLiU6yehqUO7xL19nniHTzx4YpPETJ0jcb4ER5Y76gxcws8huYqJcBhyRkJoztEBxoNjD8ChF\" SANITY_TARGET_TOKEN=\"sklzL7S8tLiU6yehqUO7xL19nniHTzx4YpPETJ0jcb4ER5Y76gxcws8huYqJcBhyRkJoztEBxoNjD8ChF\" node:*)",
+      "Bash(SANITY_TARGET_TOKEN=\"sklzL7S8tLiU6yehqUO7xL19nniHTzx4YpPETJ0jcb4ER5Y76gxcws8huYqJcBhyRkJoztEBxoNjD8ChF\" node cleanup-target.mjs)",
+      "Bash(findstr:*)",
+      "mcp__Sanity__get_document"
     ],
     "deny": [],
     "ask": []
