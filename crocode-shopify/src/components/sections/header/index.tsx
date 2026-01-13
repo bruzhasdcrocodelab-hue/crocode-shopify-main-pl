@@ -44,7 +44,7 @@ const Header = ({ servicesGrouped }: TProps) => {
     {
       key: 'about-us',
       text: t('nav.about-us'),
-      href: '/our-work'
+      href: '/about-us'
     },
     {
       key: 'contact',
