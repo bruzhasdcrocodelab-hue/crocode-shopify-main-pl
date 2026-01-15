@@ -1,19 +1,22 @@
 import styles from './styles.module.scss'
 
-import { Section, Background } from '@/components/ui'
-import Image from 'next/image'
-import { TSolution } from '@/types/templates/project'
+import { Section } from '@/components/ui'
+import { PortableText, PortableTextBlock } from '@portabletext/react'
+import { ptComponents } from '@/utils/portableTextComponents'
 
 type TProps = {
-  solution: TSolution
+  solutionRaw: PortableTextBlock[]
 }
 
-const CaseStudyDetails = ({solution}: TProps) => {
+const CaseStudyDetails = ({solutionRaw}: TProps) => {
+  if (!solutionRaw || solutionRaw.length === 0) return null
+
   return (
     <Section className={styles.details}>
       <div className={styles.details__inner}>
-        <p className={styles.details__description}>{solution.solutionText}</p>
-        <Image className={styles.details__image} src={solution.projectScreenshot.image.asset.url} width={1920} height={1300} alt={solution?.projectScreenshot.altText ?? 'Project Screenshot'}/>
+        <div className={styles.details__description}>
+          <PortableText value={solutionRaw} components={ptComponents}/>
+        </div>
       </div>
     </Section>
   )

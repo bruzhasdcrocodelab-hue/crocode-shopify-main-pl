@@ -1,4 +1,5 @@
 import { TImage, TImageWithAltText } from "./image"
+import { PortableTextBlock } from "@portabletext/react"
 
 export type TBrief = {
   description: string
@@ -8,11 +9,6 @@ export type TBrief = {
     text: string;
     url: string;
   }
-}
-
-export type TSolution = {
-  solutionText: string;
-  projectScreenshot: TImageWithAltText
 }
 
 export type TProjectCard = {
@@ -47,6 +43,6 @@ export type TProject = {
     imageMobile: TImage
     altText: string
   }
-  solution: TSolution
+  solutionRaw: PortableTextBlock[]
   theme: string | null
 }

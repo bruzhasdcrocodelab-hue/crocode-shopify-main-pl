@@ -69,12 +69,7 @@ export const getProject = (slug: string) => `
       imageMobile {asset {url}}
       altText
     }
-    solution {
-      solutionText
-      projectScreenshot {
-        image {asset {url}}
-      }
-    }
+    solutionRaw
   }
 }
 `;
