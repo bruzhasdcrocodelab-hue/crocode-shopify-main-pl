@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     gap: fluid-size(21, 40);
-    margin-top: fluid-size(100, 250);
 
     @media (min-width: 768px) {
       flex-direction: row;
@@ -30,6 +29,8 @@
 
   &__title {
     font-size: fluid-size(16, 36);
+    margin-top: fluid-size(100, 250);
+    margin-bottom: 46px;
     font-weight: 700;
     line-height: 137%;
     text-transform: uppercase;
@@ -37,6 +38,7 @@
   }
 
   &__description {
+    max-width: 574px;
     display: flex;
     flex-direction: column;
     gap: fluid-size(15, 20);
@@ -97,7 +99,7 @@
     width: 100%;
 
     @media (min-width: 768px) {
-      align-self: flex-end;
+      align-self: flex-start;
       min-width: 280px;
     }
 

@@ -20,9 +20,9 @@ const ServiceCategoryPage = ({ category }: TProps) => {
       <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <div className={styles.services}>
         <div className={styles.services__inner}>
+          <h1 className={styles.services__title}>{category.categoryName}</h1>
           <div className={styles.services__hero}>
             <div className={styles.services__heroContent}>
-              <h1 className={styles.services__title}>{category.categoryName}</h1>
               {category.description && (
                 <div className={styles.services__description}>
                   {renderParsedContent(category.description, {

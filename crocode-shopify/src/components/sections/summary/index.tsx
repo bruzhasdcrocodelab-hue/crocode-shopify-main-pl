@@ -75,14 +75,14 @@ const Summary = ({title, brief}: TProps) => {
 		<section className={styles.summary}>
 			<div className={styles.summary__inner}>
 				<div className={styles.summary__description}>
-					<Text className={styles.summary__title} tag='h2' text='The Brief' style='big'/>
+					<Text className={styles.summary__title} tag='h2' text='Krótki Opis' style='big'/>
 					<p className={styles.summary__message}>{brief?.description}</p>
 				</div>
 				<div className={styles.summary__detail}>
-					<DetailItem title="Industry" value={brief?.industry} />
-					<DetailItem title="Project" value={title} />
-					<DetailItem title="Technology" value={brief?.technologies} type="list" />
-					<DetailItem title="Website" value={brief?.website.url} type="link" linkText={brief?.website.text}/>
+					<DetailItem title="Branża" value={brief?.industry} />
+					<DetailItem title="Projekt" value={title} />
+					<DetailItem title="Technologia" value={brief?.technologies} type="list" />
+					<DetailItem title="Strona internetowa" value={brief?.website.url} type="link" linkText={brief?.website.text}/>
 				</div>
 			</div>
 		</section>

@@ -7,6 +7,8 @@ type TProps = {
 }
 
 const ProjectPage = ({project}: TProps) => {
+  if (!project) return null
+
   return (
     <>
       <HeroProject 
@@ -21,7 +23,7 @@ const ProjectPage = ({project}: TProps) => {
       />
       <Summary brief={project?.brief} title={project?.title}/>
       <Gallery image={project?.gallery}/>
-      <CaseStudyDetails solution={project?.solution}/>
+      <CaseStudyDetails solutionRaw={project?.solutionRaw}/>
       <Section type='rounded' isBlack>
         <Background desktop='/images/background/bg-black-ball.webp' alt="background black with balls"/>
         <Comments/>
