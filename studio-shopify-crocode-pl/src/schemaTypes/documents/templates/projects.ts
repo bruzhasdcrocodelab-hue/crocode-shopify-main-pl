@@ -1,5 +1,5 @@
 import { DocumentsIcon } from '@sanity/icons'
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'projects',
@@ -83,7 +83,7 @@ export default defineType({
           if (!document?.language) {
             return { filter: '' } // Пока не выбран язык
           }
-          
+
           return {
             filter: 'language == $lang',
             params: { lang: document.language }
@@ -119,8 +119,34 @@ export default defineType({
     defineField({
       title: 'Solution',
       name: 'solution',
-      type: 'solution',
-      description: 'Описани выполненой работы',
+      description: 'Описание выполненой работы',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          marks: {
+            decorators: [
+              { title: 'Strong', value: 'strong' },
+              { title: 'Emphasis', value: 'em' },
+              { title: 'Code', value: 'code' },
+            ],
+          },
+          styles: [
+            { title: 'Normal', value: 'normal' },
+            { title: 'H1', value: 'h1' },
+            { title: 'H2', value: 'h2' },
+            { title: 'H3', value: 'h3' },
+            { title: 'H4', value: 'h4' },
+            { title: 'H5', value: 'h5' },
+            { title: 'H6', value: 'h6' },
+            { title: 'Quote', value: 'blockquote' },
+          ],
+          lists: [
+            { title: 'Bullet', value: 'bullet' },
+            { title: 'Numbered', value: 'number' },
+          ],
+        },
+      ],
     }),
     defineField({
       title: 'Status',
