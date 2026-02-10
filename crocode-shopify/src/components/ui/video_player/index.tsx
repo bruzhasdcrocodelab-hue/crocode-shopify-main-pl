@@ -14,7 +14,7 @@ const VideoPlayer = ({url, title, className}: TProps) => {
 
   const getEmbedUrl = (url: string): string => {
     if (url.includes('youtube.com') || url.includes('youtu.be')) {
-      const videoId = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/)?.[1]
+      const videoId = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([^&?]+)/)?.[1]
       return `https://www.youtube.com/embed/${videoId}`
     }
     if (url.includes('vimeo.com')) {

@@ -53,8 +53,13 @@ const ServiceDetailPage = ({slug, service, projects}: TProps) => {
 
     <ServiceDetails slug={slug} service={service}/>
 
-    {service.videoUrl? (
-    <VideoSection slug={slug} service={service}/>):(<div></div>)}
+    {service.videoUrl ? (
+      <VideoSection
+        videoUrl={service.videoUrl}
+        videoUrlMobile={service.videoUrlMobile}
+        videoTitle={service.videoTitle}
+      />
+    ) : null}
 
     <Experts/>
   </>)

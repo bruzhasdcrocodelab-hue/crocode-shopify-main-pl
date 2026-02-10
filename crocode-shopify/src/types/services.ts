@@ -9,6 +9,9 @@ export type TServiceCategory = {
     altText: string;
   };
   order?: number;
+  videoTitle?: string;
+  videoUrl?: string;
+  videoUrlMobile?: string;
 }
 
 export type TServiceCard = {
@@ -56,6 +59,7 @@ export type TService = {
   details?: TServiceDetail[];
   videoTitle?: string;
   videoUrl?: string;
+  videoUrlMobile?: string;
   seo?: any;
 }
 

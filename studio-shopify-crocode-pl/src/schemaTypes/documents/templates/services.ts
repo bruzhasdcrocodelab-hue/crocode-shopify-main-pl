@@ -159,10 +159,17 @@ export default defineType({
     }),
 
     defineField({
-      title: 'Video URL',
+      title: 'Video URL (Desktop)',
       name: 'videoUrl',
       type: 'url',
-      description: 'YouTube or video URL',
+      description: 'YouTube video URL for desktop version',
+    }),
+
+    defineField({
+      title: 'Video URL (Mobile)',
+      name: 'videoUrlMobile',
+      type: 'url',
+      description: 'YouTube video URL for mobile version',
     }),
 
     // SEO

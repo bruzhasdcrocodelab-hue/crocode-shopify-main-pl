@@ -1,6 +1,6 @@
 'use client'
 
-import { ServiceBlock } from "@/components/sections"
+import { ServiceBlock, VideoSection } from "@/components/sections"
 import { Background, Section } from "@/components/ui"
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
 import { TServiceCategoryWithServices } from "@/types"
@@ -50,7 +50,26 @@ const ServicesPage = ({ serviceCategories }: TProps) => {
 
           {/* Service Blocks */}
           <div className={styles.services__blocks}>
-            {serviceCategories.map((category) => (
+            {serviceCategories.slice(0, 2).map((category) => (
+              <ServiceBlock
+                key={category._id}
+                id={category.slug.current}
+                title={category.categoryName}
+                description={category.description || ''}
+                imageUrl={category.categoryImage?.image?.asset?.url}
+                imageAlt={category.categoryImage?.altText || category.categoryName}
+                services={category.services}
+                buttonText={t('services.development.button')}
+                buttonHref={`/services/${category.slug.current}`}
+              />
+            ))}
+            <VideoSection
+              videoUrl={t('video.videoUrl')}
+              videoUrlMobile={t('video.videoUrlMobile')}
+              videoTitle={t('video.title')}
+              isDark
+            />
+            {serviceCategories.slice(2).map((category) => (
               <ServiceBlock
                 key={category._id}
                 id={category.slug.current}

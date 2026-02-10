@@ -1,5 +1,6 @@
 'use client'
 
+import { VideoSection } from "@/components/sections"
 import { Background, Section } from "@/components/ui"
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
 import { TServiceCategoryWithServices } from "@/types"
@@ -72,6 +73,14 @@ const ServiceCategoryPage = ({ category }: TProps) => {
                 h3ClassName: styles.services__h3,
               })}
             </div>
+          )}
+          {category.videoUrl && (
+            <VideoSection
+              videoUrl={category.videoUrl}
+              videoUrlMobile={category.videoUrlMobile}
+              videoTitle={category.videoTitle}
+              isDark
+            />
           )}
         </div>
       </div>

@@ -69,5 +69,23 @@ export default defineType({
       type: "number",
       initialValue: 0,
     }),
+    defineField({
+      title: 'Video Title',
+      name: 'videoTitle',
+      type: 'string',
+      description: 'Title for video section',
+    }),
+    defineField({
+      title: 'Video URL (Desktop)',
+      name: 'videoUrl',
+      type: 'url',
+      description: 'YouTube video URL for desktop version',
+    }),
+    defineField({
+      title: 'Video URL (Mobile)',
+      name: 'videoUrlMobile',
+      type: 'url',
+      description: 'YouTube video URL for mobile version',
+    }),
   ],
 });
