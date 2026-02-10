@@ -1,13 +1,13 @@
-import { 
-  HomeAboutUs, 
-  Experts, 
-  Services, 
-  
-  Comments, 
-  Hero, 
-  Industries, 
-  ShopifyAgency, 
-  Clients 
+import {
+  HomeAboutUs,
+  Experts,
+  Services,
+  VideoSection,
+  Comments,
+  Hero,
+  Industries,
+  ShopifyAgency,
+  Clients
 } from "@/components/sections";
 import { Section, Background } from "@/components/ui";
 import { TProjectCard } from "@/types";
@@ -18,15 +18,15 @@ type TProps = {
 }
 
 const HomePage = ({projects}: TProps) => {
-  const t = useTranslations('HomePage.hero')
+  const t = useTranslations('HomePage')
 
   return (<>
-    <Hero 
+    <Hero
       bg={{desktop: '/images/background/bg_hero.webp', mobile: '/images/background/bg_hero_mobile.webp', alt: 'bg hero'}}
-      title={t('title')} 
-      subtitle={t('subtitle')}
+      title={t('hero.title')}
+      subtitle={t('hero.subtitle')}
       isShowNetwork
-      button={{text: t('button.text')}}
+      button={{text: t('hero.button.text')}}
     />
     <HomeAboutUs/>
     <Clients/>
@@ -35,6 +35,12 @@ const HomePage = ({projects}: TProps) => {
       <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <ShopifyAgency projects={projects}/>
       <Services/>
+      <VideoSection
+        videoUrl={t('video.videoUrl')}
+        videoUrlMobile={t('video.videoUrlMobile')}
+        videoTitle={t('video.title')}
+        isDark
+      />
       <Comments/>
     </Section>
     <Experts/>

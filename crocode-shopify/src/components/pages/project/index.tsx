@@ -8,7 +8,6 @@ type TProps = {
 
 const ProjectPage = ({project}: TProps) => {
   if (!project) return null
-
   return (
     <>
       <HeroProject 

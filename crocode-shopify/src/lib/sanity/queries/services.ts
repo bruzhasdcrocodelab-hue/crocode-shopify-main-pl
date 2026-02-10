@@ -73,6 +73,7 @@ export const getServiceBySlug = (slug: string, lang: string = 'en') => `
     },
     videoTitle,
     videoUrl,
+    videoUrlMobile,
     seo {
       title,
       description,
@@ -111,6 +112,9 @@ export const getServiceCategoryBySlug = (slug: string, lang: string = 'en') => `
       altText
     },
     order,
+    videoTitle,
+    videoUrl,
+    videoUrlMobile,
     "services": *[_type == "services" && language == "${lang}" && references(^._id)] | order(order asc) {
       _id,
       title,

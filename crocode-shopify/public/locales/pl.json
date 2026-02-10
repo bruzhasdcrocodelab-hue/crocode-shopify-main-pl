@@ -18,6 +18,11 @@
         "text": "Omów swój projekt"
       }
     },
+    "video": {
+      "title": "Wideo o naszej pracy",
+      "videoUrl": "https://youtu.be/6JE7LwlloPc",
+      "videoUrlMobile": "https://youtube.com/shorts/0KQk1XRNrVA?feature=share"
+    },
     "why-shopify": {
       "title": "Dlaczego Shopify to nie tylko „konstruktor”",
       "message": "Wiele osób myśli, że <strong>Shopify</strong> to jak Lego dla sklepów: układasz klocki, dodajesz zdjęcia i to wszystko. Ale rzeczywistość wygląda inaczej. Tak, platforma jest <strong>łatwa w uruchomieniu</strong>, ale <strong>maksymalny potencjał</strong> ujawnia się tylko przy <strong>prawidłowej konfiguracji</strong>: logice katalogu, szybkości ładowania, architekturze UX i <strong>integracjach</strong> z CRM, analityką, automatyzacją e-mail i SMS.",
@@ -121,6 +126,11 @@
         },
         "ServicesPage": {
           "title": "Usługi",
+          "video": {
+            "title": "Wideo o naszej pracy",
+            "videoUrl": "https://youtu.be/6JE7LwlloPc",
+            "videoUrlMobile": "https://youtube.com/shorts/0KQk1XRNrVA?feature=share"
+          },
           "hero": {
             "description": "Jesteś nowy w Shopify lub chcesz wzmocnić istniejący sklep? Możesz na nas liczyć.",
             "description2": "Nasz zespół 40 ekspertów Shopify pomoże Ci zbudować i rozwijać Twój sklep online. Mamy ponad 10 lat doświadczenia w tej dziedzinie, więc jesteś w dobrych rękach."
