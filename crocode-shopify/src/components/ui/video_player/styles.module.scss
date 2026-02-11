@@ -8,6 +8,10 @@
     height: 0;
     overflow: hidden;
     border-radius: fluid-size(8, 16);
+
+    &--mobile {
+      padding-bottom: 177.78%;
+    }
   }
 
   &__iframe {

@@ -75,12 +75,14 @@ const ServiceCategoryPage = ({ category }: TProps) => {
             </div>
           )}
           {category.videoUrl && (
-            <VideoSection
-              videoUrl={category.videoUrl}
-              videoUrlMobile={category.videoUrlMobile}
-              videoTitle={category.videoTitle}
-              isDark
-            />
+            <div className={styles.video}>
+              <VideoSection
+                videoUrl={category.videoUrl}
+                videoUrlMobile={category.videoUrlMobile}
+                videoTitle={category.videoTitle}
+                isDark
+              />
+            </div>
           )}
         </div>
       </div>
