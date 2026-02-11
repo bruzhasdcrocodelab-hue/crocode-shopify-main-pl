@@ -139,7 +139,7 @@
     display: flex;
     flex-direction: column;
     padding-right: fluid-size(0, 225);
-    gap: fluid-size(151, 364);
+    gap: fluid-size(60, 140);
     padding-top: fluid-size(62, 231);
     padding-bottom: fluid-size(0, 81);
   }
@@ -202,4 +202,7 @@
     color: var(--color-text-white);
     margin-top: fluid-size(10, 20);
   }
+}
+.video{
+    margin-top: fluid-size(20, 40);
 }

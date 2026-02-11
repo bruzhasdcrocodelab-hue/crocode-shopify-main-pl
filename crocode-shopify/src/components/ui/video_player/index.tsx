@@ -7,9 +7,10 @@ type TProps = {
   url: string;
   title: string;
   className?: string;
+  isMobileVideo?: boolean;
 }
 
-const VideoPlayer = ({url, title, className}: TProps) => {
+const VideoPlayer = ({url, title, className, isMobileVideo}: TProps) => {
   const [isPlaying, setIsPlaying] = useState(false)
 
   const getEmbedUrl = (url: string): string => {
@@ -26,7 +27,7 @@ const VideoPlayer = ({url, title, className}: TProps) => {
 
   return (
     <div className={`${styles.player} ${className || ''}`}>
-      <div className={styles.player__wrapper}>
+      <div className={`${styles.player__wrapper} ${isMobileVideo ? styles['player__wrapper--mobile'] : ''}`}>
         {/* {isPlaying ? ( */}
           <iframe
             className={styles.player__iframe}

@@ -17,7 +17,8 @@ const VideoSection = ({ videoUrl, videoUrlMobile, videoTitle, isDark }: TProps) 
   const { isMobile } = useScreenSize()
 
   const title = videoTitle || t('videoTitle')
-  const currentUrl = (isMobile && videoUrlMobile) ? videoUrlMobile : (videoUrl || '')
+  const isMobileVideo = !!(isMobile && videoUrlMobile)
+  const currentUrl = isMobileVideo ? videoUrlMobile : (videoUrl || '')
 
   if (!currentUrl) return null
 
@@ -34,6 +35,7 @@ const VideoSection = ({ videoUrl, videoUrlMobile, videoTitle, isDark }: TProps) 
           <VideoPlayer
             url={currentUrl}
             title={title}
+            isMobileVideo={isMobileVideo}
           />
         </div>
       </div>
@@ -52,6 +54,7 @@ const VideoSection = ({ videoUrl, videoUrlMobile, videoTitle, isDark }: TProps) 
         <VideoPlayer
           url={currentUrl}
           title={title}
+          isMobileVideo={isMobileVideo}
         />
       </div>
     </Section>

@@ -12,6 +12,7 @@ import {
 import { Section, Background } from "@/components/ui";
 import { TProjectCard } from "@/types";
 import { useTranslations } from "next-intl";
+import styles from './styles.module.scss'
 
 type TProps = {
   projects: TProjectCard[]
@@ -35,12 +36,14 @@ const HomePage = ({projects}: TProps) => {
       <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <ShopifyAgency projects={projects}/>
       <Services/>
-      <VideoSection
-        videoUrl={t('video.videoUrl')}
-        videoUrlMobile={t('video.videoUrlMobile')}
-        videoTitle={t('video.title')}
-        isDark
-      />
+      <div className={styles.video}>
+        <VideoSection
+          videoUrl={t('video.videoUrl')}
+          videoUrlMobile={t('video.videoUrlMobile')}
+          videoTitle={t('video.title')}
+          isDark
+        />
+      </div>
       <Comments/>
     </Section>
     <Experts/>
