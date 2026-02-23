@@ -17,8 +17,8 @@ const Faqs = () => {
   return (
     <Section className={styles.section}>
       <div className={styles.section__inner}>
-        <Text className={styles.section__title} tag='h1' text='Faqs' style='small'/>
-        <Text className={styles.section__subtitle} tag='p' text='Shopify Theme Projects' style='big'/>
+        <Text className={styles.section__title} tag='h1' text='Najczęściej zadawane pytania | Crocode' style='small'/>
+        <Text className={styles.section__subtitle} tag='p' text='Znajdź odpowiedzi na często zadawane pytania dotyczące naszej agencji rozwoju platformy Crocode Shopify i naszych usług.' style='big'/>
         <div className={styles.section__list}>
           {Array.from({length: 7}).map((el, i) => 
             <Accordion isOpen={i == accordionIdIsOpen} handlerToggle={() => handlerToggle(i)} key={i}/>

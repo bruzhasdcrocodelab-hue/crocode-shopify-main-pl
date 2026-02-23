@@ -15,6 +15,7 @@ const ContactPage = () => {
       <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <div className={styles.contact__inner}>
         <Text className={styles.contact__title} tag='h1' text={t('title')} style='small'/>
+        <Text className={styles.contact__subtitle} tag='p' text={t('subtitle')} style='big'/>
         <div className={styles.contact__content}>
           <Form/>
           <MapSection/>

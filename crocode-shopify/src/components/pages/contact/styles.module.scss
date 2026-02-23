@@ -2,13 +2,18 @@
   background: #000;
 
   &__inner {
-    padding: fluid-size(270, 300) fluid-size(20, 125) fluid-size(135, 300); 
+    position: relative;
+    padding: fluid-size(270, 300) fluid-size(20, 125) fluid-size(135, 300);
   }
 
   &__title {
     color: var(--color-title-white);
-    margin-bottom: fluid-size(10, 15);
+    margin-bottom: fluid-size(0, 15);
+  }
 
+  &__subtitle {
+    color: var(--color-title-white);
+    margin-bottom: fluid-size(40, 90);
   }
 
   &__content {
