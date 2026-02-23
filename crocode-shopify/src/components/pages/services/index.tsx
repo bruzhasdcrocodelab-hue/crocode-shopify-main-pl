@@ -27,7 +27,6 @@ const ServicesPage = ({ serviceCategories }: TProps) => {
             <div className={styles.services__heroContent}>
               <div className={styles.services__description}>
                 <p>{t('hero.description')}</p>
-                <p>{t('hero.description2')}</p>
               </div>
             </div>
             <nav className={styles.services__navigation}>
