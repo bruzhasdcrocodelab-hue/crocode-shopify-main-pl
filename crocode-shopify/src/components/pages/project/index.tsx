@@ -16,9 +16,9 @@ const ProjectPage = ({project}: TProps) => {
         workDone={project?.workDone}
         subtitle={project?.client}
         background={{
-          desktopSrc: project?.coverImage.imageDesktop.asset.url, 
-          mobileSrc:project?.coverImage.imageMobile.asset.url,  
-          alt: project?.coverImage.altText}}
+          desktopSrc: project?.coverImage?.imageDesktop?.asset?.url || '/images/background/bg_hero.webp',
+          mobileSrc: project?.coverImage?.imageMobile?.asset?.url || '/images/background/bg_hero_mobile.webp',
+          alt: project?.coverImage?.altText || project?.title || 'Project cover'}}
       />
       <Summary brief={project?.brief} title={project?.title}/>
       <Gallery image={project?.gallery}/>
