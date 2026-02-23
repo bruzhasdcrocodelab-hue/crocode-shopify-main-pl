@@ -13,14 +13,14 @@ type TProps = {
 
 const Gallery = ({image}: TProps) => {
   const images = {
-    desktop: image.imageDesktop.asset.url,
-    mobile: image.imageMobile.asset.url,
-    alt: image.altText,
+    desktop: image?.imageDesktop?.asset?.url || '/images/background/bg_hero.webp',
+    mobile: image?.imageMobile?.asset?.url || '/images/background/bg_hero_mobile.webp',
+    alt: image?.altText || 'Project gallery',
   }
   const {isSmallMobile} = useScreenSize()
   return (
     <Section className={styles.gallery}>
-      <Image className={styles.gallery__image} src={isSmallMobile ? images.mobile : images.desktop} width={1920} height={1300} alt={image.altText}/>
+      <Image className={styles.gallery__image} src={isSmallMobile ? images.mobile : images.desktop} width={1920} height={1300} alt={images.alt}/>
     </Section>
   )
 }
