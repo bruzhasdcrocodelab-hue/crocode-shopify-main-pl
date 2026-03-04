@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { Footer } from "@/components/sections";
 import HeaderWrapper from "@/components/sections/header/HeaderWrapper";
 import { HeaderThemeProvider } from "@/contexts/HeaderThemeContext";
 import {NextIntlClientProvider} from 'next-intl';
 import "@/styles/index.scss";
 import '@/styles/root.scss';
+import CookieBanner from "@/components/ui/CookieBanner";
 
 const geistInter = Inter({
   variable: "--font-geist-sans",
@@ -26,6 +28,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={geistInter.variable}>
+        <Script id="crisp-chat" strategy="afterInteractive">
+        {`
+          window.$crisp = [];
+          window.CRISP_WEBSITE_ID = "ed361aa1-d0e9-4073-ac92-8639c34d42ea";
+          window.CRISP_RUNTIME_CONFIG = {
+            locale: "pl"
+          };
+
+          (function () {
+            var d = document;
+            var s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+          })();
+        `}
+        </Script>
         <HeaderThemeProvider>
           <NextIntlClientProvider>
             <HeaderWrapper/>
@@ -33,6 +52,7 @@ export default function RootLayout({
               {children}
             </main>
             <Footer/>
+            <CookieBanner />
           </NextIntlClientProvider>
         </HeaderThemeProvider>
       </body>

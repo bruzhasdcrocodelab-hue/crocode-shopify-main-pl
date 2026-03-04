@@ -73,7 +73,12 @@ const Footer = () => {
           </div>
           <nav className={styles.footer__nav}>
             <Link className={styles.footer__nav_item} href={'/'}>Agencja Shopify</Link>
-            <Link className={styles.footer__nav_item} href={'/'}>Polityka prywatności</Link>
+            <Link className={styles.footer__nav_item} href={"/privacy-policy"}>
+                {t("legal.privacyPolicy")}
+              </Link>
+              <Link className={styles.footer__nav_item} href={"/cookie-policy"}>
+                {t("legal.cookiePolicy")}
+              </Link>
           </nav>
         </div>
       </div>
