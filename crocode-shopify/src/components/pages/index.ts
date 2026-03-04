@@ -10,6 +10,8 @@ import WhyCrocodePage from "./why-crocode";
 import FaqsPage from "./faqs";
 import ProjectPage from "./project";
 import ArticlesPage from "./articles";
+import PrivacyPolicyPage from "./privacy-policy";
+import CookiePolicyPage from "./cookie-policy";
 
 export {
   HomePage,
@@ -24,4 +26,6 @@ export {
   FaqsPage,
   ProjectPage,
   ArticlesPage,
+  PrivacyPolicyPage,
+  CookiePolicyPage,
 }

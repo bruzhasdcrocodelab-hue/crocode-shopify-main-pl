@@ -316,12 +316,16 @@
         "placeholder": "Opisz swój projekt"
       },
       "checkbox": {
-        "label": "Dołącz do naszego newslettera e-commerce, aby otrzymywać darmowe poradniki, wskazówki, triki i więcej",
+        "label": "Chcę otrzymywać okazjonalne aktualizacje i wiadomości marketingowe.",
         "errors": {
           "required": "Musisz wyrazić zgodę na dołączenie do newslettera"
         }
       }
     },
+  "privacyText": "Wysyłając formularz, zgadzasz się na kontakt w sprawie zapytania. Zobacz",
+  "privacyTextPrivacy": "Politykę Prywatności",
+  "privacyTextAnd": "i",
+  "privacyTextCookie": "Politykę Cookies",
   "button": {
     "text": "Wyślij zapytanie",
     "submitting": "Wysyłanie...",
@@ -404,7 +408,11 @@
       }
     }
   },
-  "copyright": "© 2025 KROKOD Sp. z o.o. Wszelkie prawa zastrzeżone"
+  "copyright": "© 2025 KROKOD Sp. z o.o. Wszelkie prawa zastrzeżone",
+  "legal": {
+      "privacyPolicy": "Polityka Prywatności",
+      "cookiePolicy": "Polityka Cookies"
+    }
 },
 "ServiceDetailPage": {
   "design-development": {
@@ -460,6 +468,154 @@
   "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }
 }
+},
+"CookieBanner": {
+  "title": "Używamy plików cookies",
+  "description": "Używamy cookies, aby poprawić Twoje doświadczenia na naszej stronie. Akceptując, wyrażasz zgodę na używanie przez nas plików cookies. Dowiedz się więcej w naszej",
+  "privacyLink": "Polityce Cookies",
+  "accept": "Akceptuj",
+  "decline": "Odrzuć"
+},
+"PrivacyPolicyPage": {
+  "title": "POLITYKA PRYWATNOŚCI",
+  "effectiveDate": "Data wejścia w życie: 3 marca 2026 r.",
+  "applies": "Niniejsza Polityka Prywatności dotyczy serwisu: shopifydeveloper.pl (\u201eSerwis\u201d).",
+  "section1": {
+    "title": "1. Administrator danych",
+    "text": "Administratorem Twoich danych osobowych jest:\n<strong>KROKOD sp. z o.o.</strong>\nul. Tadeusza Rejtana 53A/303, 35-326 Rzeszów, Rzeczpospolita Polska, UE\nNIP: 8133877628\nKontakt (sprawy prywatności): <strong>welcome@crocodelab.com</strong>"
+  },
+  "section2": {
+    "title": "2. Jakie dane przetwarzamy",
+    "intro": "W zależności od sposobu korzystania z Serwisu możemy przetwarzać:",
+    "subsectionA": {
+      "title": "A) Dane podane przez Ciebie (formularz kontaktowy/projektowy, e-mail)",
+      "items": [
+        "Imię i nazwisko",
+        "Nazwa firmy",
+        "Adres e-mail",
+        "Numer telefonu (jeżeli podany)",
+        "Budżet (jeżeli podany)",
+        "Opis projektu oraz treść wiadomości"
+      ]
+    },
+    "subsectionB": {
+      "title": "B) Dane techniczne i statystyczne",
+      "items": [
+        "Adres IP",
+        "Informacje o urządzeniu i przeglądarce (user agent)",
+        "Język, przybliżona lokalizacja (na podstawie IP)",
+        "Referrer URL",
+        "Odwiedzane podstrony i interakcje",
+        "Cookies i podobne identyfikatory"
+      ]
+    }
+  },
+  "section3": {
+    "title": "3. Cele przetwarzania",
+    "intro": "Przetwarzamy dane w celu:",
+    "items": [
+      "Odpowiedzi na zapytania i kontaktu w sprawie projektu",
+      "Przygotowania oferty i działań przed zawarciem umowy",
+      "Obsługi procesu sprzedażowego w CRM",
+      "Zapewnienia bezpieczeństwa Serwisu i przeciwdziałania nadużyciom",
+      "Analizy i ulepszania Serwisu (analityka)",
+      "Komunikacji e-mail, w tym opcjonalnego newslettera (jeśli wyrazisz zgodę)",
+      "Obsługi czatu na stronie (jeżeli zostanie uruchomiony)"
+    ]
+  },
+  "section4": {
+    "title": "4. Podstawy prawne (RODO)",
+    "intro": "Podstawy prawne przetwarzania:",
+    "items": [
+      "<strong>Art. 6 ust. 1 lit. b RODO</strong> — działania przed zawarciem umowy i wykonanie umowy",
+      "<strong>Art. 6 ust. 1 lit. f RODO</strong> — uzasadniony interes (bezpieczeństwo, usprawnianie Serwisu, sprzedaż/obsługa zapytań)",
+      "<strong>Art. 6 ust. 1 lit. a RODO</strong> — zgoda (np. cookies inne niż niezbędne, newsletter — jeśli uruchomiony)",
+      "<strong>Art. 6 ust. 1 lit. c RODO</strong> — obowiązek prawny (np. księgowość/podatki)"
+    ]
+  },
+  "section5": {
+    "title": "5. Cookies i analityka",
+    "text": "Stosujemy cookies i podobne technologie. Jeżeli wymagają tego przepisy, prosimy o zgodę na cookies inne niż niezbędne.\nKorzystamy z <strong>Google Analytics 4 (GA4)</strong> w celu analizy ruchu i ulepszania Serwisu. Szczegóły znajdują się w <strong>Polityce Cookies</strong>."
+  },
+  "section6": {
+    "title": "6. Odbiorcy danych (podmioty przetwarzające)",
+    "intro": "Dane mogą być przekazywane:",
+    "items": [
+      "<strong>Vercel</strong> — hosting i infrastruktura Serwisu",
+      "<strong>Google (GA4)</strong> — analityka",
+      "<strong>Zoho CRM</strong> — obsługa leadów i procesu sprzedażowego",
+      "<strong>MailerLite</strong> — komunikacja e-mail / newsletter (jeśli uruchomiony i/lub za zgodą)",
+      "<strong>Crisp Chat</strong> — komunikacja przez czat (jeżeli uruchomiony)"
+    ],
+    "outro": "Dane mogą być również przekazywane profesjonalnym doradcom (prawnym/księgowym) lub organom publicznym, jeżeli wymaga tego prawo."
+  },
+  "section7": {
+    "title": "7. Przekazywanie danych poza EOG",
+    "text": "Niektórzy dostawcy mogą przetwarzać dane poza EOG. W takich przypadkach stosujemy odpowiednie zabezpieczenia (w tym SCC), jeśli mają zastosowanie."
+  },
+  "section8": {
+    "title": "8. Okres przechowywania",
+    "intro": "Przechowujemy dane osobowe tylko tak długo, jak jest to konieczne:",
+    "items": [
+      "<strong>Zapytania/leady:</strong> do <strong>24 miesięcy</strong> od ostatniego kontaktu, chyba że dojdzie do zawarcia umowy",
+      "<strong>Dane klientów/dokumenty:</strong> przez czas trwania umowy i dalej zgodnie z przepisami (np. księgowość/podatki)",
+      "<strong>Logi bezpieczeństwa:</strong> do <strong>90 dni</strong> (lub dłużej w razie incydentu)",
+      "<strong>Dane analityczne:</strong> zgodnie z ustawieniami GA4",
+      "<strong>Newsletter (jeśli uruchomiony):</strong> do wypisania się lub cofnięcia zgody"
+    ]
+  },
+  "section9": {
+    "title": "9. Twoje prawa",
+    "text": "Masz prawo do dostępu, sprostowania, usunięcia, ograniczenia, sprzeciwu, przenoszenia (gdy ma zastosowanie) oraz cofnięcia zgody w dowolnym momencie.\nW sprawie realizacji praw napisz na: <strong>welcome@crocodelab.com</strong>.\nMasz też prawo złożyć skargę do <strong>Prezesa UODO</strong>."
+  },
+  "section10": {
+    "title": "10. Bezpieczeństwo",
+    "text": "Stosujemy odpowiednie środki techniczne i organizacyjne w celu ochrony danych. Nie można jednak zagwarantować pełnego bezpieczeństwa transmisji w Internecie."
+  },
+  "section11": {
+    "title": "11. Dzieci",
+    "text": "Serwis nie jest przeznaczony dla dzieci i nie zbieramy świadomie danych dzieci."
+  },
+  "section12": {
+    "title": "12. Zmiany",
+    "text": "Polityka może być aktualizowana. Aktualna data obowiązywania znajduje się na górze dokumentu."
+  }
+},
+"CookiePolicyPage": {
+  "title": "POLITYKA COOKIES",
+  "effectiveDate": "Data wejścia w życie: 3 marca 2026 r.",
+  "applies": "Dotyczy: shopifydeveloper.pl",
+  "section1": {
+    "title": "1. Czym są cookies",
+    "text": "Cookies to małe pliki tekstowe zapisywane na urządzeniu użytkownika. Możemy stosować też podobne technologie."
+  },
+  "section2": {
+    "title": "2. Kategorie cookies",
+    "subsectionA": {
+      "title": "A) Niezbędne",
+      "text": "Zapewniają podstawowe działanie i bezpieczeństwo Serwisu."
+    },
+    "subsectionB": {
+      "title": "B) Analityczne (za zgodą, gdy wymagane)",
+      "text": "Pomagają zrozumieć sposób korzystania z Serwisu i go ulepszać.\nDostawca: <strong>Google Analytics 4 (GA4)</strong>"
+    },
+    "subsectionC": {
+      "title": "C) Funkcjonalne/komunikacyjne (jeżeli uruchomione)",
+      "text": "Mogą być wykorzystywane przez narzędzia formularzy, e-mail oraz czat — zależnie od wdrożenia.\nDostawcy mogą obejmować: <strong>MailerLite</strong>, <strong>Dostawca czatu (do wdrożenia)</strong>"
+    },
+    "subsectionD": {
+      "title": "D) Marketingowe (tylko jeśli uruchomione)",
+      "text": "Jeżeli dodamy narzędzia marketingowe/remarketing, zostaną tu wymienione i będą obsługiwane zgodnie z wymogami zgody."
+    }
+  },
+  "section3": {
+    "title": "3. Zarządzanie cookies",
+    "text": "Możesz zarządzać cookies poprzez baner/centrum preferencji (jeśli wdrożone) oraz ustawienia przeglądarki. Zablokowanie części cookies może wpłynąć na działanie Serwisu."
+  },
+  "section4": {
+    "title": "4. Aktualizacje",
+    "text": "Polityka Cookies może być aktualizowana w razie zmian technologicznych lub prawnych."
+  }
 }
 }
 

@@ -7,6 +7,7 @@ import { HeaderThemeProvider } from "@/contexts/HeaderThemeContext";
 import {NextIntlClientProvider} from 'next-intl';
 import "@/styles/index.scss";
 import '@/styles/root.scss';
+import CookieBanner from "@/components/ui/CookieBanner";
 
 const geistInter = Inter({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export default function RootLayout({
               {children}
             </main>
             <Footer/>
+            <CookieBanner />
           </NextIntlClientProvider>
         </HeaderThemeProvider>
       </body>

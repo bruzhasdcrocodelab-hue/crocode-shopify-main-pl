@@ -1,0 +1,273 @@
+﻿________________
+
+
+1) EN — Privacy Policy (crocodelab.com)
+PRIVACY POLICY
+Effective date: March 3, 2026
+This Privacy Policy applies to: crocodelab.com (the “Website”).
+1. Data Controller
+The controller of your personal data is:
+KROKOD sp. z o.o.
+ul. Tadeusza Rejtana 53A/303, 35-326 Rzeszów, Poland, EU
+NIP: 8133877628
+Email (privacy contact): welcome@crocodelab.com
+2. Personal data we collect
+Depending on how you use the Website, we may process:
+A) Data you provide (contact/project form, email)
+* First name, last name
+
+* Company name
+
+* Email address
+
+* Phone number (if provided)
+
+* Budget (if provided)
+
+* Project details and any information you include in your message
+
+B) Technical and usage data
+   * IP address
+
+   * Device and browser details (user agent)
+
+   * Language, approximate location (derived from IP)
+
+   * Referrer URL
+
+   * Pages viewed and interactions
+
+   * Cookies and similar identifiers
+
+3. Purposes of processing
+We process personal data to:
+      * Respond to your inquiry and communicate about your project
+
+      * Prepare proposals and take steps prior to entering into a contract
+
+      * Manage our sales process in CRM
+
+      * Maintain Website security and prevent abuse
+
+      * Measure and improve Website performance and user experience (analytics)
+
+      * Provide email communication, including optional newsletter/updates (if you opt in)
+
+      * Provide live chat support (if enabled on the Website)
+
+4. Legal bases (GDPR)
+Where GDPR applies, we rely on:
+         * Contract / steps prior to entering into a contract (Art. 6(1)(b)) — handling your inquiry, preparing an offer
+
+         * Legitimate interests (Art. 6(1)(f)) — security, preventing fraud/abuse, improving the Website, sales operations
+
+         * Consent (Art. 6(1)(a)) — non-essential cookies (analytics/marketing if used), newsletter/marketing emails (only if you opt in)
+
+         * Legal obligation (Art. 6(1)(c)) — accounting/tax/legal requirements when applicable
+
+5. Cookies and analytics
+We use cookies and similar technologies. Where required, we ask for your consent before placing non-essential cookies.
+We use Google Analytics 4 (GA4) to understand Website usage and improve performance. Details are in our Cookie Policy.
+6. Recipients (service providers)
+We may share personal data with trusted providers, only as necessary:
+            * Vercel — hosting and infrastructure for the Website
+
+            * Google Analytics 4 (Google) — analytics
+
+            * Zoho CRM — lead and sales process management
+
+            * MailerLite — email communications and newsletter (only if enabled and/or you opt in)
+
+            * Crisp Chat — chat communications (only if enabled)
+
+We may also share data with professional advisers (legal/accounting) or authorities if required by law.
+7. International transfers
+Some providers may process data outside the EEA. When applicable, we use appropriate safeguards such as Standard Contractual Clauses (SCCs) and other legally recognized mechanisms.
+8. Data retention
+We keep personal data only as long as necessary:
+               * Inquiries/leads: up to 24 months from last contact, unless a contract follows
+
+               * Client/project records: duration of the contract + retention required by applicable law (e.g., accounting/tax)
+
+               * Security logs: up to 90 days (unless longer needed for incident investigation)
+
+               * Analytics: according to our GA4 settings
+
+               * Newsletter (if enabled): until you unsubscribe or withdraw consent
+
+9. Your rights
+You may have the right to access, rectify, delete, restrict, object, and (where applicable) port your data, and to withdraw consent at any time.
+To exercise rights, email welcome@crocodelab.com.
+You also have the right to lodge a complaint with your supervisory authority. In Poland: UODO.
+10. Security
+We apply reasonable technical and organizational measures to protect personal data. No method of transmission or storage is 100% secure.
+11. Children
+The Website is not intended for children, and we do not knowingly collect children’s data.
+12. Changes
+We may update this policy from time to time. The Effective date indicates the latest revision.
+________________
+
+
+2) EN — Cookie Policy (crocodelab.com)
+COOKIE POLICY
+Effective date: March 3, 2026
+Applies to: crocodelab.com
+1. What are cookies
+Cookies are small text files stored on your device. We may also use similar technologies.
+2. Categories of cookies
+A) Strictly necessary
+Required for core functionality and security.
+B) Analytics (consent-based where required)
+Used to understand how the Website is used and improve it.
+Provider: Google Analytics 4 (GA4)
+C) Functional/communication (if enabled)
+May be used by Website tools such as embedded forms, email tools, or live chat, depending on implementation.
+Providers may include: MailerLite (forms/email), Live chat provider (to be implemented)
+D) Marketing (only if enabled)
+If marketing/retargeting tools are added, they will be listed here and handled via consent where required.
+3. Managing cookies
+You can manage cookies via our cookie banner/preferences (if implemented) and your browser settings. Blocking some cookies may affect Website functionality.
+4. Updates
+We may update this Cookie Policy when cookies/tools change or legal requirements evolve.
+________________
+
+
+3) PL — Polityka Prywatności (shopifydeveloper.pl)
+POLITYKA PRYWATNOŚCI
+Data wejścia w życie: 3 marca 2026 r.
+Niniejsza Polityka Prywatności dotyczy serwisu: shopifydeveloper.pl („Serwis”).
+1. Administrator danych
+Administratorem Twoich danych osobowych jest:
+KROKOD sp. z o.o.
+ul. Tadeusza Rejtana 53A/303, 35-326 Rzeszów, Rzeczpospolita Polska, UE
+NIP: 8133877628
+Kontakt (sprawy prywatności): welcome@crocodelab.com
+2. Jakie dane przetwarzamy
+W zależności od sposobu korzystania z Serwisu możemy przetwarzać:
+A) Dane podane przez Ciebie (formularz kontaktowy/projektowy, e-mail)
+                  * Imię i nazwisko
+
+                  * Nazwa firmy
+
+                  * Adres e-mail
+
+                  * Numer telefonu (jeżeli podany)
+
+                  * Budżet (jeżeli podany)
+
+                  * Opis projektu oraz treść wiadomości
+
+B) Dane techniczne i statystyczne
+                     * Adres IP
+
+                     * Informacje o urządzeniu i przeglądarce (user agent)
+
+                     * Język, przybliżona lokalizacja (na podstawie IP)
+
+                     * Referrer URL
+
+                     * Odwiedzane podstrony i interakcje
+
+                     * Cookies i podobne identyfikatory
+
+3. Cele przetwarzania
+Przetwarzamy dane w celu:
+                        * Odpowiedzi na zapytania i kontaktu w sprawie projektu
+
+                        * Przygotowania oferty i działań przed zawarciem umowy
+
+                        * Obsługi procesu sprzedażowego w CRM
+
+                        * Zapewnienia bezpieczeństwa Serwisu i przeciwdziałania nadużyciom
+
+                        * Analizy i ulepszania Serwisu (analityka)
+
+                        * Komunikacji e-mail, w tym opcjonalnego newslettera (jeśli wyrazisz zgodę)
+
+                        * Obsługi czatu na stronie (jeżeli zostanie uruchomiony)
+
+4. Podstawy prawne (RODO)
+                           * Art. 6 ust. 1 lit. b RODO — działania przed zawarciem umowy i wykonanie umowy
+
+                           * Art. 6 ust. 1 lit. f RODO — uzasadniony interes (bezpieczeństwo, usprawnianie Serwisu, sprzedaż/obsługa zapytań)
+
+                           * Art. 6 ust. 1 lit. a RODO — zgoda (np. cookies inne niż niezbędne, newsletter — jeśli uruchomiony)
+
+                           * Art. 6 ust. 1 lit. c RODO — obowiązek prawny (np. księgowość/podatki)
+
+5. Cookies i analityka
+Stosujemy cookies i podobne technologie. Jeżeli wymagają tego przepisy, prosimy o zgodę na cookies inne niż niezbędne.
+Korzystamy z Google Analytics 4 (GA4) w celu analizy ruchu i ulepszania Serwisu. Szczegóły znajdują się w Polityce Cookies.
+6. Odbiorcy danych (podmioty przetwarzające)
+Dane mogą być przekazywane:
+                              * Vercel — hosting i infrastruktura Serwisu
+
+                              * Google (GA4) — analityka
+
+                              * Zoho CRM — obsługa leadów i procesu sprzedażowego
+
+                              * MailerLite — komunikacja e-mail / newsletter (jeśli uruchomiony i/lub za zgodą)
+
+                              * Crisp Chat — komunikacja przez czat (jeżeli uruchomiony)
+
+7. Przekazywanie danych poza EOG
+Niektórzy dostawcy mogą przetwarzać dane poza EOG. W takich przypadkach stosujemy odpowiednie zabezpieczenia (w tym SCC), jeśli mają zastosowanie.
+8. Okres przechowywania
+                                 * Zapytania/leady: do 24 miesięcy od ostatniego kontaktu, chyba że dojdzie do zawarcia umowy
+
+                                 * Dane klientów/dokumenty: przez czas trwania umowy i dalej zgodnie z przepisami (np. księgowość/podatki)
+
+                                 * Logi bezpieczeństwa: do 90 dni (lub dłużej w razie incydentu)
+
+                                 * Dane analityczne: zgodnie z ustawieniami GA4
+
+                                 * Newsletter (jeśli uruchomiony): do wypisania się lub cofnięcia zgody
+
+9. Twoje prawa
+Masz prawo do dostępu, sprostowania, usunięcia, ograniczenia, sprzeciwu, przenoszenia (gdy ma zastosowanie) oraz cofnięcia zgody w dowolnym momencie.
+W sprawie realizacji praw napisz na: welcome@crocodelab.com.
+Masz też prawo złożyć skargę do Prezesa UODO.
+10. Bezpieczeństwo
+Stosujemy odpowiednie środki techniczne i organizacyjne w celu ochrony danych. Nie można jednak zagwarantować pełnego bezpieczeństwa transmisji w Internecie.
+11. Dzieci
+Serwis nie jest przeznaczony dla dzieci i nie zbieramy świadomie danych dzieci.
+12. Zmiany
+Polityka może być aktualizowana. Aktualna data obowiązywania znajduje się na górze dokumentu.
+________________
+
+
+4) PL — Polityka Cookies (shopifydeveloper.pl)
+POLITYKA COOKIES
+Data wejścia w życie: 3 marca 2026 r.
+Dotyczy: shopifydeveloper.pl
+1. Czym są cookies
+Cookies to małe pliki tekstowe zapisywane na urządzeniu użytkownika. Możemy stosować też podobne technologie.
+2. Kategorie cookies
+A) Niezbędne
+Zapewniają podstawowe działanie i bezpieczeństwo Serwisu.
+B) Analityczne (za zgodą, gdy wymagane)
+Pomagają zrozumieć sposób korzystania z Serwisu i go ulepszać.
+Dostawca: Google Analytics 4 (GA4)
+C) Funkcjonalne/komunikacyjne (jeżeli uruchomione)
+Mogą być wykorzystywane przez narzędzia formularzy, e-mail oraz czat — zależnie od wdrożenia.
+Dostawcy mogą obejmować: MailerLite, Dostawca czatu (do wdrożenia)
+D) Marketingowe (tylko jeśli uruchomione)
+Jeżeli dodamy narzędzia marketingowe/remarketing, zostaną tu wymienione i będą obsługiwane zgodnie z wymogami zgody.
+3. Zarządzanie cookies
+Możesz zarządzać cookies poprzez baner/centrum preferencji (jeśli wdrożone) oraz ustawienia przeglądarki. Zablokowanie części cookies może wpłynąć na działanie Serwisu.
+4. Aktualizacje
+Polityka Cookies może być aktualizowana w razie zmian technologicznych lub prawnych.
+________________
+
+
+Микротекст под формой “Let’s talk…” (обновлённый, EN/PL)
+EN (crocodelab.com):
+By submitting this form, you agree we may contact you about your inquiry. See our Privacy Policy and Cookie Policy.
+PL (shopifydeveloper.pl):
+Wysyłając formularz, zgadzasz się na kontakt w sprawie zapytania. Zobacz Politykę Prywatności i Politykę Cookies.
+Опциональный чекбокс для рассылки (если включишь):
+                                    * EN: I want to receive occasional updates and marketing emails.
+
+                                    * PL: Chcę otrzymywać okazjonalne aktualizacje i wiadomości marketingowe.
+
+________________

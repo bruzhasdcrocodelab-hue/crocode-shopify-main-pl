@@ -38,6 +38,23 @@
     }
   }
 
+  &__privacy {
+    font-size: fluid-size(12, 13);
+    color: var(--color-text-white);
+    opacity: 0.55;
+    line-height: 160%;
+    margin-bottom: 16px;
+  }
+
+  &__privacy_link {
+    color: var(--color-primary);
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
   &__button {
     transition: 0.3s;
 

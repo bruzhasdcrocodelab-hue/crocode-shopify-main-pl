@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 import { Section, Text, Input, Button } from "@/components/ui"
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 type FormData = {
   firstName: string
@@ -135,8 +136,12 @@ const Form = ({ className }: TProps) => {
 
     setIsSubmitting(true)
     try {
-      console.log('Form data:', formData)
-      alert('Form submitted successfully!')
+      await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
       setFormData({
         firstName: '',
         lastName: '',
@@ -159,7 +164,6 @@ const Form = ({ className }: TProps) => {
       })
     } catch (err) {
       console.error('Error submitting form:', err)
-      alert('Error submitting form. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -261,7 +265,18 @@ const Form = ({ className }: TProps) => {
           </div>
 
           <div className={styles.form__button_wrapper}>
-            <span className={`${styles.form__error} ${isSubmitDisabled ? styles['form__error--active'] : styles['form__error--hidden']}`}>
+            <p className={styles.form__privacy}>
+              {t('privacyText')}{' '}
+              <Link href='/privacy-policy' className={styles.form__privacy_link}>
+                {t('privacyTextPrivacy')}
+              </Link>{' '}
+              {t('privacyTextAnd')}{' '}
+              <Link href='/cookie-policy' className={styles.form__privacy_link}>
+                {t('privacyTextCookie')}
+              </Link>
+              .
+            </p>
+            <span className={`${styles.form__error} ${hasValidationErrors ? styles['form__error--active'] : styles['form__error--hidden']}`}>
               {t('button.errors.required')}
             </span>
             <Button
