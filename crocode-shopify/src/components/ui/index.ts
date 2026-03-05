@@ -18,6 +18,7 @@ import MapboxMap from "./map";
 import CardIndustry from "./cards/card_industry";
 import VideoPlayer from "./video_player";
 import ServicesDropdown from "./Dropdown";
+import ClutchWidget from "./ClutchWidget";
 
 export {
   Button,
@@ -40,4 +41,5 @@ export {
   CardIndustry,
   VideoPlayer,
   ServicesDropdown,
+  ClutchWidget,
 }
