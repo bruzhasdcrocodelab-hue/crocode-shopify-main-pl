@@ -48,11 +48,17 @@
   &__network {
     display: flex;
     gap: 15px;
-    
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   &__network_link {
     color: var(--color-text-black);
+  }
+
+  &__clutch {
+    display: block;
+    flex-shrink: 0;
   }
 
   &__menu {
