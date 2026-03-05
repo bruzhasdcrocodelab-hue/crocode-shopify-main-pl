@@ -72,7 +72,6 @@ const Footer = () => {
             <p className={styles.footer__copyright}>{t('copyright')}</p>
           </div>
           <nav className={styles.footer__nav}>
-            <Link className={styles.footer__nav_item} href={'/'}>Agencja Shopify</Link>
             <Link className={styles.footer__nav_item} href={"/privacy-policy"}>
                 {t("legal.privacyPolicy")}
               </Link>
