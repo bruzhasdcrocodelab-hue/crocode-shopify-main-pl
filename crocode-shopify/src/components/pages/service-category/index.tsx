@@ -21,37 +21,39 @@ const ServiceCategoryPage = ({ category }: TProps) => {
       <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <div className={styles.services}>
         <div className={styles.services__inner}>
-          <h1 className={styles.services__title}>{category.categoryName}</h1>
-          <div className={styles.services__hero}>
-            <div className={styles.services__heroContent}>
-              {category.description && (
-                <div className={styles.services__description}>
-                  {renderParsedContent(category.description, {
-                    paragraphClassName: styles.services__descriptionParagraph,
-                    listClassName: styles.services__descriptionList,
-                    listItemClassName: styles.services__descriptionListItem,
-                    h2ClassName: styles.services__descriptionH2,
-                    h3ClassName: styles.services__descriptionH3,
-                  })}
-                </div>
-              )}
+          <div className={styles.services__heroSection}>
+            <h1 className={styles.services__title}>{category.categoryName}</h1>
+            <div className={styles.services__hero}>
+              <div className={styles.services__heroContent}>
+                {category.description && (
+                  <div className={styles.services__description}>
+                    {renderParsedContent(category.description, {
+                      paragraphClassName: styles.services__descriptionParagraph,
+                      listClassName: styles.services__descriptionList,
+                      listItemClassName: styles.services__descriptionListItem,
+                      h2ClassName: styles.services__descriptionH2,
+                      h3ClassName: styles.services__descriptionH3,
+                    })}
+                  </div>
+                )}
+              </div>
+              <nav className={styles.services__navigation}>
+                {category.services.map((service, index) => (
+                  <Link
+                    key={service._id}
+                    href={`/services/${service.slug.current}`}
+                    className={styles.services__navLink}
+                  >
+                    <span className={styles.services__navNumber}>
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <span className={styles.services__navText}>
+                      {service.title}
+                    </span>
+                  </Link>
+                ))}
+              </nav>
             </div>
-            <nav className={styles.services__navigation}>
-              {category.services.map((service, index) => (
-                <Link
-                  key={service._id}
-                  href={`/services/${service.slug.current}`}
-                  className={styles.services__navLink}
-                >
-                  <span className={styles.services__navNumber}>
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                  <span className={styles.services__navText}>
-                    {service.title}
-                  </span>
-                </Link>
-              ))}
-            </nav>
           </div>
           {category.categoryImage && (
             <div className={styles.services__categoryImage} style={{ position: 'relative', overflow: 'hidden' }}>

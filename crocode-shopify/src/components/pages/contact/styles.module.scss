@@ -1,9 +1,13 @@
 .contact {
   background: #000;
 
-  &__inner {
+  &__hero {
+    min-height: 100svh;
     position: relative;
-    padding: fluid-size(270, 300) fluid-size(20, 125) fluid-size(135, 300);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: fluid-size(100, 130) fluid-size(20, 125) fluid-size(40, 60);
   }
 
   &__title {
@@ -12,13 +16,18 @@
   }
 
   &__subtitle {
-    color: var(--color-title-white);
-    margin-bottom: fluid-size(40, 90);
+    font-size: fluid-size(12, 20);
+    color: var(--color-text-white);
+    opacity: 0.8;
+    max-width: 574px;
+    text-transform: uppercase;
+    line-height: 137%;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     gap: fluid-size(150, 250);
+    padding: fluid-size(60, 90) fluid-size(20, 125) fluid-size(135, 300);
   }
 }

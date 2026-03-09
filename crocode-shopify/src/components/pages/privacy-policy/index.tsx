@@ -15,13 +15,12 @@ const PrivacyPolicyPage = () => {
         desktop="/images/background/bg-black-ball-toll.webp"
         alt="background"
       />
+      <div className={styles.page__hero}>
+        <h1 className={styles.page__title}>{t("title")}</h1>
+        <p className={styles.page__meta}>{t("effectiveDate")}</p>
+        <p className={styles.page__meta}>{t("applies")}</p>
+      </div>
       <div className={styles.page__inner}>
-        <div className={styles.page__header}>
-          <h1 className={styles.page__title}>{t("title")}</h1>
-          <p className={styles.page__meta}>{t("effectiveDate")}</p>
-          <p className={styles.page__meta}>{t("applies")}</p>
-        </div>
-
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section1.title")}</h2>
           <p
