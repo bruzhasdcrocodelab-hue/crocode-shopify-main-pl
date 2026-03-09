@@ -1,19 +1,20 @@
 .page {
   background: #000;
-  padding-top: fluid-size(120, 220);
+
+  &__hero {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: fluid-size(12, 20);
+    padding: fluid-size(100, 130) fluid-size(20, 125) fluid-size(40, 60);
+  }
 
   &__inner {
-    padding: fluid-size(60, 100) fluid-size(20, 125) fluid-size(80, 150);
+    padding: fluid-size(40, 60) fluid-size(20, 125) fluid-size(80, 150);
     display: flex;
     flex-direction: column;
     gap: fluid-size(40, 60);
-  }
-
-  &__header {
-    display: flex;
-    flex-direction: column;
-    gap: fluid-size(12, 20);
-    margin-bottom: fluid-size(20, 40);
   }
 
   &__title {
