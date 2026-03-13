@@ -34,12 +34,12 @@ const ContactPage = () => {
               style="small"
             />
           </Fade>
-          <p className={styles.contact__subtitle}>
+          {/* <p className={styles.contact__subtitle}>
             <StaggeredFade
               text={t("subtitle")}
               isInView={isInView}
             ></StaggeredFade>
-          </p>
+          </p> */}
         </div>
         <div className={styles.contact__content}>
           <Form />

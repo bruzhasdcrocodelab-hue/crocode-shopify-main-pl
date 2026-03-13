@@ -115,6 +115,16 @@ export const getServiceCategoryBySlug = (slug: string, lang: string = 'en') => `
     videoTitle,
     videoUrl,
     videoUrlMobile,
+    seo {
+      title,
+      description,
+      keywords,
+      ogType,
+      image {
+        "image": {"asset": {"url": image.asset->url}},
+        altText
+      }
+    },
     "services": *[_type == "services" && language == "${lang}" && references(^._id)] | order(order asc) {
       _id,
       title,
