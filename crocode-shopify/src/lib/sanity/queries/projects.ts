@@ -70,6 +70,17 @@ export const getProject = (slug: string) => `
       altText
     }
     solutionRaw
+    seo {
+      title
+      description
+      keywords
+      ogType
+      twitterCard
+      image {
+        image { asset { url } }
+        altText
+      }
+    }
   }
 }
 `;

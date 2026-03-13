@@ -45,4 +45,15 @@ export type TProject = {
   }
   solutionRaw: PortableTextBlock[]
   theme: string | null
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string;
+    ogType?: string;
+    twitterCard?: string;
+    image?: {
+      image: { asset: { url: string } };
+      altText: string;
+    };
+  };
 }

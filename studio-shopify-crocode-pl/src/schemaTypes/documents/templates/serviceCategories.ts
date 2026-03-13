@@ -87,5 +87,9 @@ export default defineType({
       type: 'url',
       description: 'YouTube video URL for mobile version',
     }),
+    defineField({
+      name: 'seo',
+      type: 'seo',
+    }),
   ],
 });
