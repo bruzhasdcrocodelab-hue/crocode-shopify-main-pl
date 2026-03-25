@@ -31,6 +31,8 @@
     justify-content: flex-end;
     gap: fluid-size(20, 40);
     position: relative;
+    padding: 17px fluid-size(23, 44);
+    z-index: 2;
     width: 100%;
     padding: fluid-size(100, 130) fluid-size(23, 44) fluid-size(24, 44);
   }

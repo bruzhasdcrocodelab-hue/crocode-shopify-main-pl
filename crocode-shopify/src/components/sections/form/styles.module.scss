@@ -2,11 +2,14 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: fluid-size(75, 150); 
+    gap: fluid-size(75, 150);
   }
 
   &__title {
     color: var(--color-title-white);
+    text-transform: uppercase;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
   }
 }
 
@@ -28,7 +31,7 @@
     flex-direction: column;
     gap: 55px;
   }
-  
+
   &__button_wrapper {
     display: flex;
     flex-direction: column;
@@ -60,7 +63,7 @@
 
     &:disabled {
       pointer-events: none;
-      background: #FFFFFF61;
+      background: #ffffff61;
     }
   }
 

@@ -4,13 +4,19 @@
 
   &__inner {
     position: relative;
-    padding: fluid-size(80, 120) fluid-size(30, 125) fluid-size(160, 200); 
+    padding: fluid-size(80, 120) fluid-size(30, 125) fluid-size(160, 200);
   }
 
   &__title {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
     text-align: center;
     color: var(--color-title-white);
     margin-bottom: fluid-size(80, 100);
+    text-transform: uppercase;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
   }
 
   &__content {

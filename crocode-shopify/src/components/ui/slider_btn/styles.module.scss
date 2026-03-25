@@ -1,19 +1,28 @@
 .btn {
-
   &__inner {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fluid-size(70, 107); 
+    width: fluid-size(70, 107);
     height: fluid-size(70, 107);
     border-radius: 50%;
-    background: #CEE16F;
-    color: #000;
+    background: #000000f5;
+    border: 1px solid #ffffff;
+    color: var(--color-white);
+    transition: 0.3s ease;
 
     &:disabled {
-      border: 1px solid white;
-      color: white;
+      border: 1px solid #ffffff80;
+      color: #ffffff80;
       background: #000;
+    }
+
+    &:not(.btn__inner:disabled) {
+      &:hover {
+        background-color: #cee16f;
+        border-color: #cee16f;
+        color: black;
+      }
     }
   }
 

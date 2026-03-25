@@ -107,6 +107,7 @@ html {
 }
 body {
   line-height: 1;
+  cursor: none;
 }
 ol,
 ul,
@@ -121,7 +122,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -130,7 +131,7 @@ table {
 }
 button {
   border: none;
-  cursor: pointer;
+  cursor: none;
 }
 a {
   text-decoration: none;

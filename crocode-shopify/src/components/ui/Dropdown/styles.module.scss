@@ -1,4 +1,4 @@
-@import '@/styles/mixins';
+@import "@/styles/mixins";
 
 .dropdown {
   position: relative;
@@ -9,7 +9,7 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: 20px;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     padding: 32px;
@@ -17,7 +17,10 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease,
+      transform 0.3s ease;
     transform: translateX(-50%) translateY(-10px);
     z-index: 100;
 
@@ -79,7 +82,9 @@
     font-size: 14px;
     line-height: 140%;
     color: var(--color-text-gray);
-    transition: color 0.2s, transform 0.2s;
+    transition:
+      color 0.2s,
+      transform 0.2s;
     padding: 4px 0;
 
     &:hover {

@@ -24,7 +24,7 @@ main {
 }
 
 a {
-  cursor: pointer;
+  cursor: none;
 }
 
 svg {
@@ -33,7 +33,7 @@ svg {
 }
 
 .mapboxgl-ctrl-bottom {
-  &-right, 
+  &-right,
   &-left {
     display: none;
   }

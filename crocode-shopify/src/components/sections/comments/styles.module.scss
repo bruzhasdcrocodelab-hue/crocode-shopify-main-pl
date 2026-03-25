@@ -1,6 +1,6 @@
 .comments {
-  padding: fluid-size(75, 240) fluid-size(40, 203) fluid-size(160, 240); 
-  color: white;
+  padding: fluid-size(75, 240) fluid-size(40, 203) fluid-size(160, 240);
+  color: var(--color-white);
 
   &__inner {
     display: flex;
@@ -17,7 +17,7 @@
     color: var(--color-title-white);
   }
 
-  &__texts{
+  &__texts {
     display: flex;
     flex-direction: column;
     gap: fluid-size(13, 20);
@@ -27,11 +27,10 @@
     text-align: center;
     line-height: 217%;
   }
-
 }
 
 .slider {
-  max-width: fluid-size(312, 1290); 
+  max-width: fluid-size(312, 1290);
   margin: 0 auto;
 
   &__comment {
@@ -49,7 +48,8 @@
     &:nth-child(1) {
       top: 0;
       left: 0;
-      transform: translateX(calc((100% + fluid-size(0, 10)) * -1)) translateY(-50%) rotate(180deg);
+      transform: translateX(calc((100% + fluid-size(0, 10)) * -1))
+        translateY(-50%) rotate(180deg);
     }
 
     &:nth-child(2) {

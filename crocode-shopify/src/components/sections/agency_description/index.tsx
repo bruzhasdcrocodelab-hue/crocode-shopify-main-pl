@@ -1,23 +1,32 @@
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
-import { Section, Text, Background } from '@/components/ui';
-import { useTranslations } from 'next-intl';
+import { Section, Text, Background } from "@/components/ui";
+import { Fade } from "@/components/ui/Fade";
+import { WordsPullUp } from "@/components/ui/WordsPullUp";
+import { useTranslations } from "next-intl";
 
 const AgencyDescription = () => {
-  const t = useTranslations('WhyCrocodePage.AgencyDescription')
-  
-  return ( 
-    <Section type='rounded' className={styles.section}>
-      <Background desktop='/images/background/bg-dark.webp' alt='background image'/>
+  const t = useTranslations("WhyCrocodePage.AgencyDescription");
+
+  return (
+    <Section type="rounded" className={styles.section}>
+      <Background
+        desktop="/images/background/bg-dark.webp"
+        alt="background image"
+      />
       <div className={styles.section__inner}>
-        <Text className={styles.section__title} tag='h2' text={t('title')} style='big'/>
+        <WordsPullUp text={t("title")} className={styles.section__title} />
         <div className={styles.section__content}>
-          <p className={styles.section__text}>{t('text1')}</p>
-          <p className={styles.section__text}>{t('text2')}</p>
+          <Fade direction="down">
+            <p className={styles.section__text}>{t("text1")}</p>
+          </Fade>
+          <Fade direction="down">
+            <p className={styles.section__text}>{t("text2")}</p>
+          </Fade>
         </div>
       </div>
     </Section>
-  )
-}
+  );
+};
 
 export default AgencyDescription;

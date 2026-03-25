@@ -8,11 +8,12 @@ type TProps = {
 
 const ProjectPage = ({project}: TProps) => {
   if (!project) return null
+
   return (
     <>
-      <HeroProject 
+      <HeroProject
         theme={project.theme}
-        title={project?.title} 
+        title={project?.title}
         workDone={project?.workDone}
         subtitle={project?.client}
         background={{

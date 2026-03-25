@@ -8,15 +8,15 @@ $transition: 0.3s;
   transition: $transition;
 
   @include media-up(lg) {
-    
   }
 
   &:hover {
     outline: none;
+    transform: translateY(-14px);
 
     .card__inner {
       color: var(--color-text-black);
-      background: white;
+      background: var(--color-white);
     }
 
     .card__arrow {
@@ -58,26 +58,26 @@ $transition: 0.3s;
       padding: fluid-size(0, 20) fluid-size(5, 30) fluid-size(0, 25);
 
       &--wide {
-        -webkit-mask-image: url('/images/cards/card-mask-wide.svg');
-        mask-image: url('/images/cards/card-mask-wide.svg');
+        -webkit-mask-image: url("/images/cards/card-mask-wide.svg");
+        mask-image: url("/images/cards/card-mask-wide.svg");
       }
 
       &--toll {
-        -webkit-mask-image: url('/images/cards/card-mask-long.svg');
-        mask-image: url('/images/cards/card-mask-long.svg');
+        -webkit-mask-image: url("/images/cards/card-mask-long.svg");
+        mask-image: url("/images/cards/card-mask-long.svg");
       }
     }
 
     @include media-down(lg) {
       padding: 20px fluid-size(20, 30) fluid-size(20, 25);
       &--wide {
-        -webkit-mask-image: url('/images/cards/card-mask-wide.svg');
-        mask-image: url('/images/cards/card-mask-wide.svg');
+        -webkit-mask-image: url("/images/cards/card-mask-wide.svg");
+        mask-image: url("/images/cards/card-mask-wide.svg");
       }
 
       &--toll {
-        -webkit-mask-image: url('/images/cards/card-mask-wide.svg');
-        mask-image: url('/images/cards/card-mask-wide.svg');
+        -webkit-mask-image: url("/images/cards/card-mask-wide.svg");
+        mask-image: url("/images/cards/card-mask-wide.svg");
       }
     }
   }

@@ -1,6 +1,6 @@
 .section {
   &__inner {
-    padding:  fluid-size(130, 200) 45px fluid-size(150, 200); 
+    padding: fluid-size(130, 200) 45px fluid-size(150, 200);
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -23,6 +23,7 @@
   width: 100%;
   border-radius: fluid-size(10, 20);
   overflow: hidden;
+  transition: 0.3s ease;
 
   @include media-down(lg) {
     max-width: 400px;
@@ -48,8 +49,12 @@
   }
 
   &__text {
-    font-size: fluid-size(12, 20); 
+    font-size: fluid-size(12, 20);
     line-height: 137%;
     text-align: justify;
+  }
+
+  &:hover {
+    transform: translateY(-30px);
   }
 }

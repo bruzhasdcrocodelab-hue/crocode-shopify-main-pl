@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import {
   Hero,
@@ -8,60 +8,65 @@ import {
   ShopifyOffers,
   ServiceDetails,
   VideoSection,
-  Experts
-} from "@/components/sections"
-import { Background, Section } from "@/components/ui"
-import { TProjectCard, TService } from "@/types"
-import { useLightThemeForHeader } from "@/hooks/useHeaderTheme"
+  Experts,
+} from "@/components/sections";
+import { Background, Section } from "@/components/ui";
+import { TProjectCard, TService } from "@/types";
+import { useLightThemeForHeader } from "@/hooks/useHeaderTheme";
+import ThreeTrail from "@/components/sections/three_trail";
 
 type TProps = {
   slug: string;
   service: TService;
-  projects: TProjectCard[]
-}
+  projects: TProjectCard[];
+};
 
-const ServiceDetailPage = ({slug, service, projects}: TProps) => {
-  useLightThemeForHeader()
+const ServiceDetailPage = ({ slug, service, projects }: TProps) => {
+  useLightThemeForHeader();
 
-  return (<>
-    <Hero
-      bg={{
-        desktop: '/images/background/bg_hero.webp',
-        mobile: '/images/background/bg_hero_mobile.webp',
-        alt: 'Design & Development background'
-      }}
-      title={service.title}
-      subtitle={service.heroSubtitle || ''}
-    />
-
-    <ServiceDescription slug={slug} service={service}/>
-
-    <ShopifyAgency
-      projects={projects.slice(0, 4)}
-      showTitle={true}
-      customTitleStyle="centered"
-    />
-
-    <Section type='rounded' isBlack shift>
-      <Background
-        desktop='/images/background/bg-dark.webp'
-        alt="background black with waves"
+  return (
+    <>
+      <Hero
+        bg={{
+          desktop: "/images/background/bg_hero.webp",
+          mobile: "/images/background/bg_hero_mobile.webp",
+          alt: "Design & Development background",
+        }}
+        title={service.title}
+        subtitle={service.heroSubtitle || ""}
+        animatedBg
       />
-      <ShopifyOffers slug={slug} service={service}/>
-    </Section>
 
-    <ServiceDetails slug={slug} service={service}/>
+      <ServiceDescription slug={slug} service={service} />
 
-    {service.videoUrl ? (
-      <VideoSection
-        videoUrl={service.videoUrl}
-        videoUrlMobile={service.videoUrlMobile}
-        videoTitle={service.videoTitle}
+      <ShopifyAgency
+        projects={projects.slice(0, 4)}
+        showTitle={true}
+        customTitleStyle="centered"
       />
-    ) : null}
 
-    <Experts/>
-  </>)
-}
+      <Section type="rounded" isBlack shift>
+        <Background
+          desktop="/images/background/bg-black-ball.webp"
+          alt="background black with waves"
+        />
+        <ShopifyOffers slug={slug} service={service} />
+        <ThreeTrail />
+      </Section>
 
-export default ServiceDetailPage
+      <ServiceDetails slug={slug} service={service} />
+
+      {service.videoUrl ? (
+        <VideoSection
+          videoUrl={service.videoUrl}
+          videoUrlMobile={service.videoUrlMobile}
+          videoTitle={service.videoTitle}
+        />
+      ) : null}
+
+      <Experts />
+    </>
+  );
+};
+
+export default ServiceDetailPage;
