@@ -2,13 +2,22 @@
   padding: fluid-size(50, 150) fluid-size(20, 125) 0;
 
   &__title {
+    display: flex;
+    gap: 5px;
     color: var(--color-title-white);
     margin-bottom: fluid-size(0, 15);
+    text-transform: uppercase;
+    font-size: fluid-size(16, 36);
+    font-weight: 700;
+    line-height: 137%;
   }
 
   &__subtitle {
     color: var(--color-title-white);
     margin-bottom: fluid-size(40, 90);
+    text-transform: uppercase;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
   }
 
   &__list {

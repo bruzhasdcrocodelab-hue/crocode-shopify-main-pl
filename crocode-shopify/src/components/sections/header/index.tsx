@@ -1,105 +1,111 @@
-'use client'
+"use client";
 
-import styles  from './styles.module.scss'
+import styles from "./styles.module.scss";
 
-import Link from 'next/link'
-import { Button, Burger, ServicesDropdown } from '@/components/ui'
-import { useState, useEffect, useRef } from 'react'
-import disableBodyScroll from '@/utils/disableBodyScroll'
-import useScreenSize from '@/hooks/useScreenSize'
-import { useHeaderTheme } from '@/contexts/HeaderThemeContext'
-import { useTranslations } from 'next-intl'
-import { TServicesGrouped } from '@/types'
+import Link from "next/link";
+import { Button, Burger, ServicesDropdown } from "@/components/ui";
+import { useState, useEffect, useRef } from "react";
+import disableBodyScroll from "@/utils/disableBodyScroll";
+import useScreenSize from "@/hooks/useScreenSize";
+import { useHeaderTheme } from "@/contexts/HeaderThemeContext";
+import { useTranslations } from "next-intl";
+import { TServicesGrouped } from "@/types";
+import { motion } from "motion/react";
 
 type TNav = {
-  text: string
-  href: string
-  hasDropdown?: boolean
-}
+  text: string;
+  href: string;
+  hasDropdown?: boolean;
+};
 
 type TProps = {
   servicesGrouped: TServicesGrouped;
-}
+};
 
 const Header = ({ servicesGrouped }: TProps) => {
-  const t = useTranslations('Header')
-  const {theme, isDark, hasBackgroundImage} = useHeaderTheme()
-  const {isMobile} = useScreenSize()
-  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
-  const [servicesHover, setServicesHover] = useState<boolean>(false)
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const t = useTranslations("Header");
+  const { theme, isDark, hasBackgroundImage } = useHeaderTheme();
+  const { isMobile } = useScreenSize();
+  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
+  const [servicesHover, setServicesHover] = useState<boolean>(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const NAV_LIST = [
     {
-      key: 'our-work',
-      text: t('nav.our-work'),
-      href: '/our-work'
+      key: "our-work",
+      text: t("nav.our-work"),
+      href: "/our-work",
     },
     {
-      key: 'services',
-      text: t('nav.services'),
-      href: '/services',
-      hasDropdown: true
+      key: "services",
+      text: t("nav.services"),
+      href: "/services",
+      hasDropdown: true,
     },
     {
-      key: 'about-us',
-      text: t('nav.about-us'),
-      href: '/about-us'
+      key: "about-us",
+      text: t("nav.about-us"),
+      href: "/about-us",
     },
     {
-      key: 'contact',
-      text: t('nav.contact'),
-      href: '/contact'
+      key: "contact",
+      text: t("nav.contact"),
+      href: "/contact",
     },
-  ]
+  ];
 
   const handleServicesEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current)
-    setServicesHover(true)
-  }
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setServicesHover(true);
+  };
 
   const handleServicesLeave = () => {
     timeoutRef.current = setTimeout(() => {
-      setServicesHover(false)
-    }, 200)
-  }
+      setServicesHover(false);
+    }, 200);
+  };
 
   useEffect(() => {
-    disableBodyScroll({isDisabled: menuIsOpen})
-    return () => disableBodyScroll({remove: true})
-  }, [menuIsOpen])
+    disableBodyScroll({ isDisabled: menuIsOpen });
+    return () => disableBodyScroll({ remove: true });
+  }, [menuIsOpen]);
 
   useEffect(() => {
     if (!isMobile) {
-      setMenuIsOpen(false)
+      setMenuIsOpen(false);
     }
-    return (() => {
-      setMenuIsOpen(false)
-    })
-  }, [isMobile])
+    return () => {
+      setMenuIsOpen(false);
+    };
+  }, [isMobile]);
 
   useEffect(() => {
     return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current)
-    }
-  }, [])
-  
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
   return (
-    <header
-    className={`${styles.header}
+    <motion.header
+      className={`${styles.header}
     ${isDark ? styles[`header--dark`] : styles[`header--light`]}
-    ${hasBackgroundImage ? styles[`header--has-bg-image`] : ''}
-    ${menuIsOpen ? styles[`header--menu-open`] : styles[`header--menu-hidden`]}`
-    }>
+    ${hasBackgroundImage ? styles[`header--has-bg-image`] : ""}
+    ${menuIsOpen ? styles[`header--menu-open`] : styles[`header--menu-hidden`]}`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className={styles.header__inner}>
-        <Link href={'/'} onClick={() => setMenuIsOpen(false)}>
+        <Link href={"/"} onClick={() => setMenuIsOpen(false)}>
           <span className={styles.header__logo}>Crocode</span>
         </Link>
-        <div className={`${styles.header__menu} ${menuIsOpen ? styles[`header__menu--open`] : ''}`}>
-           <nav className={styles.header__nav}>
+        <div
+          className={`${styles.header__menu} ${menuIsOpen ? styles[`header__menu--open`] : ""}`}
+        >
+          <nav className={styles.header__nav}>
             {NAV_LIST.map((item, i) => (
               <li
-                className={styles.header__nav_item}
+                className={`${styles.header__nav_item} ${item.hasDropdown && servicesHover ? styles[`header__nav_item--hover`] : ""}`}
                 key={i}
                 onMouseEnter={() => item.hasDropdown && handleServicesEnter()}
                 onMouseLeave={() => item.hasDropdown && handleServicesLeave()}
@@ -112,7 +118,10 @@ const Header = ({ servicesGrouped }: TProps) => {
                   {item.text}
                 </Link>
                 {item.hasDropdown && !isMobile && servicesHover && (
-                  <div onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
+                  <div
+                    onMouseEnter={handleServicesEnter}
+                    onMouseLeave={handleServicesLeave}
+                  >
                     <ServicesDropdown
                       servicesGrouped={servicesGrouped}
                       isDark={isDark}
@@ -123,12 +132,23 @@ const Header = ({ servicesGrouped }: TProps) => {
               </li>
             ))}
           </nav>
-          <Button className={styles.header__button} as='link' href='/contact' styleType='secondary' text='Skontaktuj się z nami'/>
+          <Button
+            className={styles.header__button}
+            as="link"
+            href="/contact"
+            styleType="secondary"
+            text="Skontaktuj się z nami"
+          />
         </div>
-        <Burger className={styles.header__burger} theme={theme} isActive={menuIsOpen} setIsActive={() => setMenuIsOpen(!menuIsOpen)}/>
+        <Burger
+          className={styles.header__burger}
+          theme={theme}
+          isActive={menuIsOpen}
+          setIsActive={() => setMenuIsOpen(!menuIsOpen)}
+        />
       </div>
-    </header>
-  )
-}
+    </motion.header>
+  );
+};
 
-export default Header
+export default Header;

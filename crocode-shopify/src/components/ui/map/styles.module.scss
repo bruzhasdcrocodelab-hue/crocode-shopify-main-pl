@@ -5,10 +5,10 @@
   &__marker {
     width: fluid-size(38, 62);
     height: fluid-size(57, 93);
-    background-image: url('/marker.svg');
+    background-image: url("/marker.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: pointer;
+    cursor: none;
     animation: bounce 1.2s infinite ease-in-out;
     transform-origin: bottom center;
 
@@ -42,7 +42,7 @@
 
   &__text {
     font-size: fluid-size(7, 12);
-    color: white;
+    color: var(--color-white);
     line-height: 150%;
   }
 }

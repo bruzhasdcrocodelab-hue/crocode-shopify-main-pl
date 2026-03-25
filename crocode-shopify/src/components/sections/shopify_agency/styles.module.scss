@@ -1,5 +1,4 @@
 .section {
-
   &__inner {
     padding: fluid-size(80, 165) fluid-size(30, 125) fluid-size(65, 95);
   }
@@ -22,11 +21,12 @@
     }
   }
 
-  &__subtitle, &__texts {
+  &__subtitle,
+  &__texts {
     color: var(--color-text-white);
   }
 
-  &__texts{
+  &__texts {
     font-size: fluid-size(16, 20);
     display: flex;
     flex-direction: column;
@@ -48,11 +48,11 @@
     width: fluid-size(220, 460);
     height: fluid-size(310, 640);
     border-radius: 20px;
-    background: white;
+    background: var(--color-white);
   }
 
   &__btn {
-    &_prev, 
+    &_prev,
     &_next {
       position: absolute;
       z-index: 100;

@@ -4,9 +4,10 @@ import Script from "next/script";
 import { Footer } from "@/components/sections";
 import HeaderWrapper from "@/components/sections/header/HeaderWrapper";
 import { HeaderThemeProvider } from "@/contexts/HeaderThemeContext";
-import {NextIntlClientProvider} from 'next-intl';
+import { NextIntlClientProvider } from "next-intl";
 import "@/styles/index.scss";
-import '@/styles/root.scss';
+import "@/styles/root.scss";
+import CustomCursor from "@/components/ui/Cursor";
 import CookieBanner from "@/components/ui/CookieBanner";
 
 const geistInter = Inter({
@@ -17,7 +18,7 @@ const geistInter = Inter({
 
 export const metadata: Metadata = {
   title: "Crocode",
-  description: "Oficjalny partner Shopify Premier i agencja Shopify Plus oferująca rozwiązania z zakresu rozwoju przedsiębiorstw, integracji i wzrostu dla globalnych marek.",
+  description: "Official Shopify Premier Partner and Shopify Plus agency delivering enterprise development, integrations, and growth solutions for global brands.",
 };
 
 export default function RootLayout({
@@ -45,13 +46,12 @@ export default function RootLayout({
           })();
         `}
         </Script>
+        <CustomCursor />
         <HeaderThemeProvider>
           <NextIntlClientProvider>
-            <HeaderWrapper/>
-            <main className="main">
-              {children}
-            </main>
-            <Footer/>
+            <HeaderWrapper />
+            <main className="main">{children}</main>
+            <Footer />
             <CookieBanner />
           </NextIntlClientProvider>
         </HeaderThemeProvider>
@@ -59,3 +59,4 @@ export default function RootLayout({
     </html>
   );
 }
+

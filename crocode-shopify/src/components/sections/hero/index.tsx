@@ -5,11 +5,12 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import { Button, Background, ClutchWidget } from "@/components/ui";
 import { useBackgroundImageForHeader } from "@/hooks/useHeaderTheme";
-import { motion, useInView } from "motion/react";
+import { useInView } from "motion/react";
 import { useRef } from "react";
 import { WordsPullUp } from "@/components/ui/WordsPullUp";
 import StaggeredFade from "@/components/ui/StaggeredFade";
 import { BlurIn } from "@/components/ui/BlurIn";
+import ThreeTrail from "../three_trail";
 
 type TProps = {
   bg?: {
@@ -24,6 +25,7 @@ type TProps = {
   title: string;
   subtitle?: string;
   shift?: boolean;
+  animatedBg?: boolean;
 };
 
 const Hero = ({
@@ -33,9 +35,11 @@ const Hero = ({
   isShowNetwork = false,
   button,
   shift = false,
+  animatedBg = false,
 }: TProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
   if (bg) {
     useBackgroundImageForHeader();
   }
@@ -51,6 +55,7 @@ const Hero = ({
           loading="eager"
         />
       )}
+      {animatedBg && <ThreeTrail opacityValue={1} />}
       <div className={styles.hero__inner}>
         <div className={styles.hero__content} ref={ref}>
           <WordsPullUp text={title} className={styles.hero__title} />
@@ -87,7 +92,10 @@ const Hero = ({
                     <Link className={styles.hero__network_link} href={"/"}>
                       FACEBOOK
                     </Link>
-                    <Link className={styles.hero__network_link} href={"https://www.linkedin.com/company/crocodelab/"}>
+                    <Link
+                      className={styles.hero__network_link}
+                      href={"https://www.linkedin.com/company/crocodelab/"}
+                    >
                       LINKEDIN
                     </Link>
                   </div>

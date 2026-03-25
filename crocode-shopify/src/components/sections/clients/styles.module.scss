@@ -1,9 +1,12 @@
 .clients {
+  position: sticky;
+  top: 20px;
+
   background: #000;
 
   &__inner {
     position: relative;
-    padding: fluid-size(90, 188) 20px fluid-size(160, 292); 
+    padding: fluid-size(90, 188) 20px fluid-size(160, 292);
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
@@ -13,6 +16,9 @@
     text-align: center;
     margin-bottom: fluid-size(60, 100);
     color: var(--color-title-white);
+    text-transform: uppercase;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
   }
 
   &__list {
@@ -27,9 +33,9 @@
     @include media-down(lg) {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(6, 1fr);
-      gap: fluid-size(20, 50); 
+      gap: fluid-size(20, 50);
     }
-  } 
+  }
 
   &__item {
     padding: 10px;

@@ -5,7 +5,7 @@ $line-gap: 8px;
   z-index: 1;
   background: transparent;
   border: none;
-  cursor: pointer;
+  cursor: none;
   padding: 10px;
 
   &__inner {
@@ -25,12 +25,12 @@ $line-gap: 8px;
     border-radius: 50px;
 
     &--dark {
-      background: white;
+      background: var(--color-white);
     }
 
-    &::before, 
+    &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -54,7 +54,7 @@ $line-gap: 8px;
   &--active {
     .burger__line {
       background: transparent;
-      
+
       &::before {
         transform: translateY(0) rotate(45deg);
         background: black;

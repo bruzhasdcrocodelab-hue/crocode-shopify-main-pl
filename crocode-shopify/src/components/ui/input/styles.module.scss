@@ -19,15 +19,16 @@
     color: var(--color-text-white);
     background: transparent;
     resize: none;
+    cursor: none;
 
     &::placeholder {
-      color: #FFFFFF5E;
+      color: #ffffff5e;
     }
 
     &:focus {
       outline: none;
     }
-  } 
+  }
 }
 
 .error {
@@ -46,7 +47,6 @@
 }
 
 .checkbox {
-
   &__inner {
     display: flex;
     align-items: center;
@@ -70,7 +70,7 @@
     }
 
     &--active {
-      background: #CEE16F;
+      background: #cee16f;
 
       svg {
         opacity: 1;
@@ -79,6 +79,6 @@
   }
 
   &__label {
-    color: #FFFFFF5E;
+    color: #ffffff5e;
   }
 }

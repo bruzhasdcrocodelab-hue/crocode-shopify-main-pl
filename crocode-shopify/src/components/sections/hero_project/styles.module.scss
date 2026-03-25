@@ -8,8 +8,8 @@
   height: 100%;
 
   &__image::after {
-    // background: #00000015;
-    // backdrop-filter: blur(5px);
+    background: #00000015;
+    backdrop-filter: blur(5px);
   }
 
   &__content {
@@ -21,7 +21,7 @@
     padding: 145px 20px;
     position: relative;
   }
-  
+
   &__title {
     text-align: center;
     margin-bottom: 50px;
@@ -41,7 +41,7 @@
 
   &__text {
     text-transform: uppercase;
-    font-size: fluid-size(16, 20); 
+    font-size: fluid-size(16, 20);
     line-height: 163%;
     text-align: center;
 
