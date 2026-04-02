@@ -29,8 +29,8 @@ const clients_image = [
     alt: "ttswtrs client",
   },
   {
-    image: "/images/clients/edition-julie-joliat.svg",
-    alt: "edition-julie-joliat client",
+    image: "/images/clients/remaer.svg",
+    alt: "remaer client",
   },
   {
     image: "/images/clients/s.svg",
@@ -65,8 +65,8 @@ const clients_image = [
     alt: "tmrw client",
   },
   {
-    image: "/images/clients/aallbuy.svg",
-    alt: "aallbuy client",
+    image: "/images/clients/mitre10.svg",
+    alt: "mitre10 client",
   },
   {
     image: "/images/clients/ubaa-haus.svg",
