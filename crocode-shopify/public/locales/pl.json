@@ -341,7 +341,7 @@
     }
   },
   "lets-talk": {
-    "title": "Porozmawiajmy o e-commerce",
+    "title": "Porozmawiajmy o ecommerce",
     "description": "Jesteśmy certyfikowaną agencją Shopify specjalizującą się we współpracy z markami w zakresie tworzenia, budowania, uruchamiania, utrzymania i rozwijania sklepów Shopify i Shopify Plus. Jako zaufany partner Shopify jesteśmy dostępni, gdy tylko będziesz gotowy. Skontaktuj się z naszym zespołem, aby omówić swój projekt.",
     "button": {
       "text": "Skontaktuj się z nami"
@@ -471,7 +471,7 @@
   }
 },
 "Footer": {
-  "message": "Porozmawiajmy o e-commerce",
+  "message": "Porozmawiajmy o ecommerce",
   "buttons": {
     "contact": {
       "text": "Skontaktuj się z nami"
@@ -496,7 +496,7 @@
       }
     }
   },
-  "copyright": "© 2025 KROKOD Sp. z o.o. Wszelkie prawa zastrzeżone",
+  "copyright": "© 2026 KROKOD Sp. z o.o. Wszelkie prawa zastrzeżone",
   "legal": {
       "privacyPolicy": "Polityka Prywatności",
       "cookiePolicy": "Polityka Cookies"

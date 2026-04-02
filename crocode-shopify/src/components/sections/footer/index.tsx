@@ -2,7 +2,7 @@
 
 import styles from "./styles.module.scss";
 
-import { InstagramIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
+import { LinkedinIcon, TikTokIcon, YoutubeIcon } from "@/components/icons";
 import { Button, ClutchWidget } from "@/components/ui";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,16 +16,16 @@ import { BlurIn } from "@/components/ui/BlurIn";
 
 const NETWORK = [
   {
-    href: "#",
-    icon: InstagramIcon,
+    href: "www.youtube.com/@crocodelab",
+    icon: YoutubeIcon,
   },
   {
     href: "https://www.linkedin.com/company/crocodelab/",
     icon: LinkedinIcon,
   },
   {
-    href: "#",
-    icon: TwitterIcon,
+    href: "https://www.tiktok.com/@crocodelab",
+    icon: TikTokIcon,
   },
 ];
 
@@ -42,6 +42,7 @@ const Footer = () => {
       <Image src="/images/background/bg_footer.webp" fill alt="bg" />
       <div className={styles.footer__inner}>
         <div className={styles.footer__content}>
+          
           <div className={styles.footer__info}>
             <p className={styles.footer__message} ref={ref}>
               <StaggeredFade text={t("message")} isInView={isInView} />
@@ -60,6 +61,7 @@ const Footer = () => {
                   <Link
                     className={styles.footer__network_link}
                     href={item.href}
+                    target="_blank"
                     key={i}
                   >
                     <item.icon />

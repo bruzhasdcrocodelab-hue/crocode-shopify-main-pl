@@ -30,10 +30,14 @@
     }
   }
 
+  &__info {
+    // max-width: 30%;
+  }
+
   &__message {
-    max-width: fluid-size(215, 415);
+    max-width: fluid-size(215, 430);
     margin-bottom: 20px;
-    font-size: fluid-size(32, 64);
+    font-size: fluid-size(28, 55);
     line-height: 137%;
     text-transform: uppercase;
     color: var(--color-text-black);
@@ -53,6 +57,8 @@
   }
 
   &__network_link {
+    width: 26px;
+    height: 26px;
     color: var(--color-text-black);
   }
 
