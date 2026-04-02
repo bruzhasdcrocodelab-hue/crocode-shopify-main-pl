@@ -11,6 +11,12 @@ import { splitTextIntoParagraphs } from "@/utils/parseTextContent";
 import { Fade } from "@/components/ui/Fade";
 import { BlurIn } from "@/components/ui/BlurIn";
 
+type TComment = {
+  text: string;
+  author?: string;
+  project?: string;
+}
+
 const Comments = () => {
   const t = useTranslations("HomePage.comments");
   const [emblaRef, emblaApi] = useEmblaCarousel();
@@ -25,17 +31,7 @@ const Comments = () => {
     [emblaApi],
   );
 
-  const commentKey = [
-    "items.item1",
-    "items.item2",
-    "items.item3",
-    "items.item4",
-  ];
-  const COMMENTS = commentKey.map((key) => ({
-    text: t(`${key}.text`),
-    author: t(`${key}.author`),
-    project: t(`${key}.project`),
-  }));
+  const COMMENTS = t.raw('items') as TComment[];
 
   const textParagraphs = splitTextIntoParagraphs(t("text"));
 
