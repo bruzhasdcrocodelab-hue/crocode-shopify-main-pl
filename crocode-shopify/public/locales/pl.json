@@ -86,28 +86,117 @@
     "comments": {
       "title": "Dlaczego klienci zostają z nami na długo",
       "text": "Agencja rozwoju Shopify nie działa jak wykonawcy, którzy tylko „wykonują zadanie”, ale jak partnerzy, którzy myślą tak samo jak Ty, właścicielu biznesu. Dla nas ważny jest nie tylko proces, ale rzeczywisty rezultat: wzrost sprzedaży, lojalność klientów i efektywność inwestycji. Dlatego nie tworzymy tylko strony internetowej ani nie prowadzimy reklam — jesteśmy odpowiedzialni za to, aby te narzędzia naprawdę działały dla Twojego biznesu.\n\nBezpieczeństwo nie jest dla nas formalnością. Najpierw wdrażamy wszystkie poprawki i aktualizacje w środowisku testowym, aby sprawdzić, jak wpłyną na system. Nasi analitycy badają i weryfikują wszystko wcześniej. Backup jest domyślnie włączony, a dostęp do danych krytycznych jest ściśle ograniczony. Twój biznes nie powinien cierpieć z powodu eksperymentów technicznych, dlatego działamy ostrożnie, ale pewnie.\n\nI co najważniejsze, mierzymy sukces nie liczbą stworzonych stron czy uruchomionych banerów, ale rzeczywistymi wskaźnikami biznesowymi: wzrost konwersji, zwiększenie średniego paragonu i wzrost wartości życia klienta (LTV). Jeśli to się nie zdarzy, wracamy do planu. Dla naszego zespołu dobry wynik to nie zrealizowane zamówienie, ale Twój zadowolony klient i rosnący zysk.",
-      "items": {
-        "item1": {
-          "text": "CROCOD stworzył doskonałą stronę Shopify — szybką, wysokiej jakości i dopracowaną w szczegółach. Zadowolony ze współpracy i gorąco polecam!",
-          "author": "Alexa Smith",
-          "project": "SienaHome"
+      "items": [
+        {
+          "text": "Pomogli nam z dostosowaniem jednej z naszych stron internetowych i wykonali świetną pracę. Komunikacja była doskonała, a Max to utalentowany programista.",
+          "author": "Zoofs NZ"
         },
-        "item2": {
-          "text": "CROCOD stworzył doskonałą stronę Shopify — szybką, wysokiej jakości i dopracowaną w szczegółach. Zadowolony ze współpracy i gorąco polecam!",
-          "author": "Alexa Smith",
-          "project": "SienaHome"
+        {
+          "text": "Jestem bardzo zadowolony z nowej funkcji sklepu. Wszystko zostało wykonane dokładnie tak, jak chciałem. Dobrze jest mieć takiego partnera jak Cro Code u swojego boku, gdy myślisz o rozwoju sklepu i chcesz wdrożyć nowe funkcje.",
+          "author": "Ilalou"
         },
-        "item3": {
-          "text": "CROCOD stworzył doskonałą stronę Shopify — szybką, wysokiej jakości i dopracowaną w szczegółach. Zadowolony ze współpracy i gorąco polecam!",
-          "author": "Alexa Smith",
-          "project": "SienaHome"
+        {
+          "text": "Skontaktowaliśmy się ze stroną w sprawie poprawek i byliśmy bardzo zadowoleni! Wszystko zostało wykonane szybko i sprawnie. Dziękujemy za szybką reakcję!",
+          "author": "Time Crafter"
         },
-        "item4": {
-          "text": "CROCOD stworzył doskonałą stronę Shopify — szybką, wysokiej jakości i dopracowaną w szczegółach. Zadowolony ze współpracy i gorąco polecam!",
-          "author": "Alexa Smith",
-          "project": "SienaHome"
+        {
+          "text": "Niedawno współpracowałem z Crocode przy przebudowie mojej strony rankingsco.com i nie mógłbym być bardziej zadowolony z efektów. Od początku do końca ich zespół był profesjonalny, komunikatywny i niezwykle dbały o szczegóły. Bezproblemowo przeprowadzili pełną migrację z WordPressa, dbając o każdą stronę i wpis.",
+          "author": "Rankings"
+        },
+        {
+          "text": "Współpracowaliśmy z zespołem Crocode przy redesignie naszego sklepu na Shopify i szczerze mówiąc — spisali się znakomicie. Nasze produkty nie należą do najłatwiejszych do zaprezentowania (sprzedajemy profesjonalne nawozy), ale udało im się przedstawić wszystko w sposób przejrzysty i łatwy do przeglądania.",
+          "author": "Fervita"
+        },
+        {
+          "text": "Aliaksandr i jego zespół są ABSOLUTNIE najlepsi. Nie wahaj się ani chwili, by z nimi współpracować. Są wyspecjalizowani, profesjonalni i uczciwi. Pobierają opłaty tylko za to, co deklarują, i wykonują pracę terminowo oraz precyzyjnie.",
+          "author": "Relaxe"
+        },
+        {
+          "text": "Niedawno współpracowałem z zespołem deweloperów CROCODE przy konfiguracji mojej domeny i nie mógłbym być bardziej zadowolony z tego doświadczenia. Od początku do końca byli profesjonalni, efektywni i niezwykle pomocni.",
+          "author": "Banner Printing San Diego"
+        },
+        {
+          "text": "Współpracowałem z CROCODE przy kilku markach i czterech stronach internetowych i za każdym razem współpraca była na wysokim poziomie. Niezależnie czy chodziło o design, development, CRO, optymalizację szybkości czy utrzymanie — zajęli się wszystkim i zrobili to bardzo dobrze.",
+          "author": "Anthony Baxter",
+          "project": "Founder, Simply Nootropics"
+        },
+        {
+          "text": "Bardzo dobra praca, bardzo pomocni.",
+          "author": "Art Forma Home"
+        },
+        {
+          "text": "Crocode to świetny zespół deweloperów Shopify. Pracują szybko, dostarczają wysoką jakość i dobrze się komunikują. Zawsze responsywni i proaktywni — nie tylko realizują zadania, ale znajdują rozwiązania. Jeśli potrzebujesz solidnego partnera do projektu Shopify, gorąco ich polecam.",
+          "author": "tico"
+        },
+        {
+          "text": "Po migracji klient podwoił sprzedaż online, a jego strona stała się bardziej stabilna i łatwiejsza w użyciu. Crocode wykorzystało nowoczesne technologie i praktyki, dostarczając produkt najwyższej jakości. Dużą uwagę poświęcono także potrzebom klienta, co zapewniło płynną współpracę.",
+          "author": "Besu Oyler",
+          "project": "Founder, Enlisted Design"
+        },
+        {
+          "text": "Dzięki wiedzy zespołu Crocode sklep zaczął ładować się o około 40% szybciej, co zwiększyło współczynnik konwersji o około 25%. Zespół komunikował się skutecznie przez Telegram i Zoom oraz realizował zadania na czas. Ich ekspertyza była wyraźnie widoczna.",
+          "author": "Igor Nechytaylo",
+          "project": "Project Manager, RaDevs"
+        },
+        {
+          "text": "Klient jest zachwycony wysoką jakością pracy Crocode. Firma prowadzi elastyczny, transparentny i strategiczny proces, korzystając z Zoom, Google Meet i Slack. Klient docenił także ich wiedzę i zdolność dopasowania się do potrzeb.",
+          "project": "Executive, Custom Software Development Company"
+        },
+        {
+          "text": "Strona stworzona przez Crocode jest atrakcyjna wizualnie i szybka — czas ładowania skrócono z 10 sekund do mniej niż pół sekundy. Zespół prowadził projekt sprawnie, komunikował się efektywnie i trzymał się budżetu. Ich dokładne konsultacje wzbudziły zaufanie klienta.",
+          "project": "Head of Business of Development, Adexin"
+        },
+        {
+          "text": "Crocode dostarczyło szczegółowe wireframe’y i plany, które deweloperzy klienta wykorzystali jako podstawę wersji mobilnej platformy. Choć nie wszystkie pomysły zostały użyte, projekt wyznaczył jasny kierunek i pomógł uniknąć poważnych błędów.",
+          "author": "Jake Wood",
+          "project": "CEO, Groundswell"
+        },
+        {
+          "text": "Crocode stworzyło stronę, która ładuje się szybko i zapewnia płynne doświadczenie użytkownikom. Klient może teraz łatwo publikować nowe treści i aktualizować stronę bez ingerencji w kod. Projekt był dobrze zorganizowany, komunikacja jasna i regularna, a dbałość o szczegóły na wysokim poziomie.",
+          "author": "Lee Wallach",
+          "project": "Founder & CEO, Home Appétit"
+        },
+        {
+          "text": "Crocode dostarczyło wysokiej jakości sklep Shopify, spełniający złożone wymagania klienta. Zespół komunikował się skutecznie, był responsywny i sprawnie prowadził projekt. Klient docenił ich zaangażowanie i zrozumienie biznesu.",
+          "author": "Nathan Jordan",
+          "project": "Founder, Caraway Home"
+        },
+        {
+          "text": "Crocode dostarczyło strony działające płynnie i bez problemów. Zespół miał dobrze zorganizowane podejście do zarządzania projektem. Współpraca odbywała się przez Slack i Trello, a komunikacja była jasna i terminowa. Wyróżniały się ich profesjonalizm i niezawodność.",
+          "author": "Ruth Zisser",
+          "project": "Founder, RUTI INC."
+        },
+        {
+          "text": "Crocode stworzyło stronę szybszą, bardziej przyjazną użytkownikowi, co przełożyło się na 11% wzrost sprzedaży mobilnej i mniejszy współczynnik porzuceń koszyka. Zespół świetnie zarządzał projektem, dotrzymywał terminów i elastycznie reagował na zmiany.",
+          "author": "Bianca Padillia",
+          "project": "Founder, Carewell"
+        },
+        {
+          "text": "Strona działała płynnie i była odpowiednio zoptymalizowana. Około 80% monitorowanych słów kluczowych znalazło się na pierwszej stronie wyników wyszukiwania. Crocode dobrze zarządzało współpracą i dostarczyło wszystko na czas.",
+          "author": "Oleksandr Vesilyk",
+          "project": "Webpromo"
+        },
+        {
+          "text": "Praca została wykonana dobrze. Nie mam żadnych zastrzeżeń.",
+          "author": "Michael Torem",
+          "project": "Obviously Wireless"
+        },
+        {
+          "text": "Crocode to wyjątkowo utalentowany i świadomy zespół. Zawsze odpowiedzialni, profesjonalni i przede wszystkim zależy im na wysokiej jakości pracy. Nie czekaj — zatrudnij ich!",
+          "author": "Ankit Gupta",
+          "project": "Relaxe.co"
+        },
+        {
+          "text": "Miła obsługa, schludna praca, programowanie naszego narzędzia zostało wykonane szybko i bez komplikacji.",
+          "author": "Katharine Bitzer",
+          "project": "Remaer"
+        },
+        {
+          "text": "Bardzo utalentowany frontend developer, świetne umiejętności CSS, wszystkie zadania wykonane na czas. Gorąco polecam i liczę na dalszą współpracę w przyszłości.",
+          "author": "Dean Maslic",
+          "project": "MITRE10"
         }
-      }
+      ]
     },
         "experts": {
           "title": "Eksperci Shopify",
