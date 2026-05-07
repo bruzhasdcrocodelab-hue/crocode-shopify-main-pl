@@ -2,51 +2,58 @@
 
 import styles from "./styles.module.scss";
 
-import { LinkedinIcon, TikTokIcon, YoutubeIcon } from "@/components/icons";
-import { Button, ClutchWidget } from "@/components/ui";
+import { Button, ClutchWidget, TextType, PartnerWidget } from "@/components/ui";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
 import { Fade } from "@/components/ui/Fade";
-import StaggeredFade from "@/components/ui/StaggeredFade";
-import { useRef } from "react";
-import { useInView } from "motion/react";
 import { BlurIn } from "@/components/ui/BlurIn";
+import { NETWORK } from "./data";
 
-const NETWORK = [
-  {
-    href: "www.youtube.com/@crocodelab",
-    icon: YoutubeIcon,
-  },
-  {
-    href: "https://www.linkedin.com/company/crocodelab/",
-    icon: LinkedinIcon,
-  },
-  {
-    href: "https://www.tiktok.com/@crocodelab",
-    icon: TikTokIcon,
-  },
-];
+type TFooterColumn = {
+  title: string;
+  nav: {
+    text: string;
+    href: string;
+  }[];
+};
 
 const Footer = () => {
   const t = useTranslations("Footer");
-  const pathname = usePathname();
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const isServiceDetailPage =
-    pathname?.startsWith("/services/") && pathname !== "/services";
+
+  const COLUMN1: TFooterColumn = {
+    title: t("columns.what-we-do.title"),
+    nav: [
+      { text: t(`columns.what-we-do.nav.our-work`), href: "/our-work" },
+      { text: t(`columns.what-we-do.nav.services`), href: "/services" },
+      { text: t(`columns.what-we-do.nav.about-us`), href: "/about-us" },
+      { text: t(`columns.what-we-do.nav.why-crocode`), href: "/why-crocode" },
+      { text: t(`columns.what-we-do.nav.faqs`), href: "/faqs" },
+    ],
+  };
+
+  const COLUMN2: TFooterColumn = {
+    title: t("columns.get-in-touch.title"),
+    nav: [
+      { text: t(`columns.get-in-touch.nav.email`), href: "/contact" },
+      { text: t(`columns.get-in-touch.nav.contact`), href: "/contact" },
+    ],
+  };
 
   return (
     <footer className={styles.footer}>
       <Image src="/images/background/bg_footer.webp" fill alt="bg" />
       <div className={styles.footer__inner}>
         <div className={styles.footer__content}>
-          
           <div className={styles.footer__info}>
-            <p className={styles.footer__message} ref={ref}>
-              <StaggeredFade text={t("message")} isInView={isInView} />
-            </p>
+            <BlurIn>
+              <TextType
+                text={t("message")}
+                as={"p"}
+                className={styles.footer__message}
+              />
+            </BlurIn>
+
             <BlurIn>
               <div className={styles.footer__buttons}>
                 <Button
@@ -57,80 +64,74 @@ const Footer = () => {
                 />
               </div>
               <div className={styles.footer__network}>
-                {NETWORK.map((item, i) => (
+                <div className={styles.footer__widgets}>
                   <Link
-                    className={styles.footer__network_link}
-                    href={item.href}
+                    href="https://clutch.co/profile/crocode"
                     target="_blank"
-                    key={i}
+                    rel="noopener noreferrer"
+                    className={styles.footer__widget_link}
                   >
-                    <item.icon />
+                    <ClutchWidget />
                   </Link>
-                ))}
-                <a
-                  href="https://clutch.co/profile/crocode"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.footer__clutch}
-                >
-                  <ClutchWidget />
-                </a>
+                  <Link
+                    href={
+                      "https://www.shopify.com/partners/directory/partner/krokod-sp-z-o-o"
+                    }
+                    target="_blank"
+                    className={styles.footer__widget_link}
+                  >
+                    <PartnerWidget />
+                  </Link>
+                </div>
               </div>
             </BlurIn>
           </div>
 
           <Fade direction="up">
             <div className={styles.footer__menu}>
-              <div className={styles.footer__column}>
-                <p className={styles.footer__column_title}>
-                  {t("columns.what-we-do.title")}
-                </p>
-                <Link href="/our-work" className={styles.footer__list_item}>
-                  {t(`columns.what-we-do.nav.our-work`)}
-                </Link>
-                <Link href="/services" className={styles.footer__list_item}>
-                  {t(`columns.what-we-do.nav.services`)}
-                </Link>
-                <Link href="/about-us" className={styles.footer__list_item}>
-                  {t(`columns.what-we-do.nav.about-us`)}
-                </Link>
-                <Link href="/why-crocode" className={styles.footer__list_item}>
-                  {t(`columns.what-we-do.nav.why-crocode`)}
-                </Link>
-                <Link href="/faqs" className={styles.footer__list_item}>
-                  {t(`columns.what-we-do.nav.faqs`)}
-                </Link>
-              </div>
-              <div className={styles.footer__column}>
-                <p className={styles.footer__column_title}>
-                  {t("columns.get-in-touch.title")}
-                </p>
-                <Link href="/contact" className={styles.footer__list_item}>
-                  {t(`columns.get-in-touch.nav.email`)}
-                </Link>
-                <Link href="/contact" className={styles.footer__list_item}>
-                  {t(`columns.get-in-touch.nav.contact`)}
-                </Link>
-              </div>
+              <ColumnNav column={COLUMN1} />
+              <ColumnNav column={COLUMN2} />
             </div>
           </Fade>
         </div>
+
         <Fade direction="down">
           <div className={styles.footer__bottom}>
-            <div className={styles.footer__bottom_content}>
-              <Link className={styles.footer__logo} href={"/"}>
-                Crocode
-              </Link>
-              <p className={styles.footer__copyright}>{t("copyright")}</p>
+            <div className={styles.footer__network_items}>
+              {NETWORK.map((item, i) => (
+                <Link
+                  className={styles.footer__network_link}
+                  href={item.href}
+                  target="_blank"
+                  key={i}
+                >
+                  <item.icon />
+                </Link>
+              ))}
             </div>
-            <nav className={styles.footer__nav}>
-              <Link className={styles.footer__nav_item} href={"/privacy-policy"}>
-                {t("legal.privacyPolicy")}
-              </Link>
-              <Link className={styles.footer__nav_item} href={"/cookie-policy"}>
-                {t("legal.cookiePolicy")}
-              </Link>
-            </nav>
+
+            <div className={styles.footer__bottom_inner}>
+              <div className={styles.footer__bottom_content}>
+                <Link className={styles.footer__logo} href={"/"}>
+                  Crocode
+                </Link>
+                <p className={styles.footer__copyright}>{t("copyright")}</p>
+              </div>
+              <nav className={styles.footer__nav}>
+                <Link
+                  className={styles.footer__nav_item}
+                  href={"/privacy-policy"}
+                >
+                  {t("legal.privacyPolicy")}
+                </Link>
+                <Link
+                  className={styles.footer__nav_item}
+                  href={"/cookie-policy"}
+                >
+                  {t("legal.cookiePolicy")}
+                </Link>
+              </nav>
+            </div>
           </div>
         </Fade>
       </div>
@@ -139,3 +140,16 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const ColumnNav = ({ column }: { column: TFooterColumn }) => {
+  return (
+    <div className={styles.footer__column}>
+      <p className={styles.footer__column_title}>{column.title}</p>
+      {column.nav.map((item, i) => (
+        <Link href={item.href} className={styles.footer__list_item} key={i}>
+          {item.text}
+        </Link>
+      ))}
+    </div>
+  );
+};

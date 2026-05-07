@@ -9,10 +9,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: fluid-size(50, 72) fluid-size(15, 80) fluid-size(15, 30); 
+    padding: fluid-size(50, 72) fluid-size(15, 80) fluid-size(15, 30);
 
     @include media-up(md) {
-      gap: fluid-size(100, 328); 
+      gap: fluid-size(100, 328);
     }
 
     @include media-down(md) {
@@ -31,11 +31,10 @@
   }
 
   &__info {
-    // max-width: 30%;
+    width: min-content;
   }
 
   &__message {
-    max-width: fluid-size(215, 430);
     margin-bottom: 20px;
     font-size: fluid-size(28, 55);
     line-height: 137%;
@@ -51,9 +50,27 @@
 
   &__network {
     display: flex;
+    flex-direction: column;
     gap: 15px;
-    align-items: center;
     flex-wrap: wrap;
+  }
+
+  &__network_items {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__widgets {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+  }
+
+  &__widget_link {
+    display: inline-block;
+    max-width: 211px;
+    overflow: hidden;
   }
 
   &__network_link {
@@ -62,16 +79,11 @@
     color: var(--color-text-black);
   }
 
-  &__clutch {
-    display: block;
-    flex-shrink: 0;
-  }
-
   &__menu {
     display: flex;
 
     @include media-up(md) {
-      gap: fluid-size(40, 135); 
+      gap: fluid-size(40, 135);
     }
 
     @include media-down(md) {
@@ -117,6 +129,12 @@
   }
 
   &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__bottom_inner {
     display: flex;
     gap: 20px;
     justify-content: space-between;

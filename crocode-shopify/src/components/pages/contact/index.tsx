@@ -7,17 +7,12 @@ import { Form, MapSection } from "@/components/sections";
 import { Background, Section, Text } from "@/components/ui";
 import { useTranslations } from "next-intl";
 import { Fade } from "@/components/ui/Fade";
-import StaggeredFade from "@/components/ui/StaggeredFade";
-import { useRef } from "react";
-import { useInView } from "motion/react";
 import { BlurIn } from "@/components/ui/BlurIn";
 
 const ContactPage = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   useDarkThemeForHeader();
   const t = useTranslations("ContactPage");
+
   return (
     <>
       <Section className={styles.contact} isBlack>
@@ -25,7 +20,7 @@ const ContactPage = () => {
           desktop="/images/background/bg-black-ball-toll.webp"
           alt="background black with balls"
         />
-        <div className={styles.contact__hero} ref={ref}>
+        <div className={styles.contact__hero}>
           <Fade direction="down">
             <Text
               className={styles.contact__title}

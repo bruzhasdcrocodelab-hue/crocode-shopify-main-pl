@@ -57,11 +57,24 @@
     }
   }
 
+  &__widgets {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__widget_link {
+    max-width: 211px;
+  }
+
   &__bottom_right {
     display: flex;
-    align-items: center;
     gap: fluid-size(16, 32);
     margin-left: auto;
+
+    @include media-up("md") {
+      align-items: center;
+    }
 
     @include media-down(md) {
       margin-left: 0;
@@ -92,12 +105,12 @@
 
   &__networks {
     display: flex;
-    gap: 30px;
+    gap: fluid-size(14, 30);
   }
 
   &__network_link {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: fluid-size(14, 16);
     line-height: 120%;
     color: var(--color-text-black);
   }
