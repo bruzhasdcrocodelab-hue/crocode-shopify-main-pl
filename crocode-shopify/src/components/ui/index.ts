@@ -19,6 +19,8 @@ import CardIndustry from "./cards/card_industry";
 import VideoPlayer from "./video_player";
 import ServicesDropdown from "./Dropdown";
 import ClutchWidget from "./ClutchWidget";
+import TextType from "./text_type";
+import PartnerWidget from "./widget";
 
 export {
   Button,
@@ -42,4 +44,6 @@ export {
   VideoPlayer,
   ServicesDropdown,
   ClutchWidget,
-}
+  TextType,
+  PartnerWidget,
+};

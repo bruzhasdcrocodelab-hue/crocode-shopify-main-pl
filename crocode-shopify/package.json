@@ -13,6 +13,7 @@
     "@sanity/client": "^7.13.1",
     "@sanity/image-url": "^1.2.0",
     "embla-carousel-react": "^8.6.0",
+    "gsap": "^3.14.1",
     "graphql": "^16.11.0",
     "graphql-request": "^7.2.0",
     "mapbox-gl": "^3.12.0",

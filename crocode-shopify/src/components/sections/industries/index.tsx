@@ -1,7 +1,13 @@
+import { BlurIn } from "@/components/ui/BlurIn";
 import styles from "./styles.module.scss";
-import { Section, Background, Text, CardIndustry } from "@/components/ui";
+import {
+  Section,
+  Background,
+  Text,
+  CardIndustry,
+  TextType,
+} from "@/components/ui";
 import { Fade } from "@/components/ui/Fade";
-import { WordsPullUp } from "@/components/ui/WordsPullUp";
 import { useTranslations } from "next-intl";
 
 const Industries = () => {
@@ -9,7 +15,7 @@ const Industries = () => {
 
   const cardsKey = ["card1", "card2", "card3"];
   const cards = cardsKey.map((key, i) => ({
-    number: i + 1 > 9 ? `${i + 1}` : `0${i + 1}`,
+    number: String(i + 1).padStart(2, "0"),
     title: t(`cards.${key}.title`),
     description: t(`cards.${key}.text`),
   }));
@@ -21,8 +27,16 @@ const Industries = () => {
         mobile="/images/background/bg_hero.webp"
         alt="background"
       />
+
       <div className={styles.industries__inner}>
-        <WordsPullUp className={styles.industries__title} text={t("title")} />
+        <BlurIn>
+          <TextType
+            className={styles.industries__title}
+            text={t("title")}
+            textAs={"h2"}
+          />
+        </BlurIn>
+
         <Fade direction="up">
           <Text className={styles.industries__subtitle} text={t("text")} />
         </Fade>

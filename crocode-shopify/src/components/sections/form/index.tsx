@@ -1,13 +1,13 @@
 "use client";
 
 import styles from "./styles.module.scss";
-import { Section, Text, Input, Button } from "@/components/ui";
+import { Section, Text, Input, Button, TextType } from "@/components/ui";
 import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Fade } from "@/components/ui/Fade";
-import StaggeredFade from "@/components/ui/StaggeredFade";
 import { useInView } from "motion/react";
 import Link from "next/link";
+import { BlurIn } from "@/components/ui/BlurIn";
 
 type FormData = {
   firstName: string;
@@ -183,9 +183,14 @@ const Form = ({ className }: TProps) => {
   return (
     <Section className={`${styles.section} ${className || ""}`}>
       <div className={styles.section__inner}>
-        <p className={styles.section__title} ref={ref}>
-          <StaggeredFade text={t("title")} isInView={isInView} />
-        </p>
+        <BlurIn>
+          <TextType
+            text={t("title")}
+            textAs={"h2"}
+            className={styles.section__title}
+          />
+        </BlurIn>
+
         <Fade direction="down">
           <form className={styles.form} onSubmit={handleSubmit} noValidate>
             <Input
@@ -277,11 +282,17 @@ const Form = ({ className }: TProps) => {
             <div className={styles.form__button_wrapper}>
               <p className={styles.form__privacy}>
                 {t("privacyText")}{" "}
-                <Link href="/privacy-policy" className={styles.form__privacy_link}>
+                <Link
+                  href="/privacy-policy"
+                  className={styles.form__privacy_link}
+                >
                   {t("privacyTextPrivacy")}
                 </Link>{" "}
                 {t("privacyTextAnd")}{" "}
-                <Link href="/cookie-policy" className={styles.form__privacy_link}>
+                <Link
+                  href="/cookie-policy"
+                  className={styles.form__privacy_link}
+                >
                   {t("privacyTextCookie")}
                 </Link>
                 .
