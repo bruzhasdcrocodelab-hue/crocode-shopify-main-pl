@@ -1,4 +1,12 @@
-export const getServiceCategoriesWithServices = (lang: string = 'en') => `
+export const getServicesSlug = (lang: string = "pl") => `
+  query {
+    allServices(where: { language: { eq: "${lang}" } }) {
+      slug {current}
+    }
+  }
+`;
+
+export const getServiceCategoriesWithServices = (lang: string = "en") => `
 {
   "serviceCategories": *[_type == "serviceCategories" && language == "${lang}"] | order(order asc) {
     _id,
@@ -20,7 +28,7 @@ export const getServiceCategoriesWithServices = (lang: string = 'en') => `
 }
 `;
 
-export const getServicesForDropdown = (lang: string = 'en') => `
+export const getServicesForDropdown = (lang: string = "en") => `
 {
   "allServiceCategories": *[_type == "serviceCategories" && language == "${lang}"] | order(order asc) {
     _id,
@@ -41,7 +49,7 @@ export const getServicesForDropdown = (lang: string = 'en') => `
 }
 `;
 
-export const getServiceBySlug = (slug: string, lang: string = 'en') => `
+export const getServiceBySlug = (slug: string, lang: string = "en") => `
 {
   "allServices": *[_type == "services" && slug.current == "${slug}" && language == "${lang}"] {
     _id,
@@ -88,7 +96,7 @@ export const getServiceBySlug = (slug: string, lang: string = 'en') => `
 }
 `;
 
-export const getAllServices = (lang: string = 'en') => `
+export const getAllServices = (lang: string = "en") => `
 {
   "allServices": *[_type == "services" && language == "${lang}"] {
     _id,
@@ -99,7 +107,7 @@ export const getAllServices = (lang: string = 'en') => `
 }
 `;
 
-export const getServiceCategoryBySlug = (slug: string, lang: string = 'en') => `
+export const getServiceCategoryBySlug = (slug: string, lang: string = "en") => `
 {
   "serviceCategory": *[_type == "serviceCategories" && slug.current == "${slug}" && language == "${lang}"][0] {
     _id,
