@@ -141,7 +141,7 @@ const HeroBottom = memo(
                   className={styles.hero__network_link}
                   href={"https://www.tiktok.com/@crocodelab"}
                 >
-                  tictok
+                  tiktok
                 </Link>
                 <Link
                   className={styles.hero__network_link}
