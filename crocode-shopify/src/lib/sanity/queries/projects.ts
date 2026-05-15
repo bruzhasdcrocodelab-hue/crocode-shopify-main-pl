@@ -1,4 +1,4 @@
-export const getProjects = (lang: string = 'en') => `
+export const getProjects = (lang: string = "en") => `
   query {
   allProjects(where: { language: { eq: "${lang}" } }) {
   	_id
@@ -14,6 +14,14 @@ export const getProjects = (lang: string = 'en') => `
       image {asset {url}}
       altText
     }
+  }
+}
+`;
+
+export const getProjectsSlug = (lang: string = "pl") => `
+  query {
+  allProjects(where: { language: { eq: "${lang}" } }) {
+    slug {current}
   }
 }
 `;
@@ -38,7 +46,7 @@ export const getArticleSeo = (slug: string) => `
     }
   }
 }
-`
+`;
 
 export const getProject = (slug: string) => `
   query {
