@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://shopifydeveloper.pl/";
+const baseUrl = "https://shopifydeveloper.pl";
 
 const routes = [
   "/",
